@@ -1,0 +1,78 @@
+.carrouselclothesline {
+  width: 340px;
+  max-width: 100vw;
+  margin: 0 auto;
+
+  position: absolute;
+  top: 0;
+
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-origin: top center;
+    transition: transform 0.4s ease-in-out, opacity 0.4s ease;
+    height: 600px;
+
+    // Itens não ativos
+    &:not(.swiper-slide-active) {
+      //animation: swing 0.2 ease-in-out 2s; // Mantém o balanço
+      //animation-fill-mode: forwards;
+    }
+
+    // Item ativo
+    &.swiper-slide-active {
+      animation-name: swing;
+      animation-duration: 1.5s;
+      animation-timing-function: ease-in-out;
+      animation-delay: 0.3s;
+      animation-iteration-count: 1;
+      animation-direction: normal;
+      animation-fill-mode: forwards;
+    }
+
+    padding-top: 150px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -404px;
+      z-index: 1;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url(/varal.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    top: var(--swiper-navigation-top-offset, 62%);
+  }
+}
+
+// Balanço suave para itens não ativos
+@keyframes swing {
+  0% {
+    transform: rotate(-2deg);
+  }
+
+  25% {
+    transform: rotate(2deg);
+  }
+
+  50% {
+    transform: rotate(-2deg);
+  }
+
+  75% {
+    transform: rotate(2deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}

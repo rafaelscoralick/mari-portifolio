@@ -1,0 +1,29 @@
+@use "../../styles/mixins" as *;
+
+.header {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 59px;
+
+  .logo {
+    margin-left: 24px;
+    width: 64px;
+
+    @include desktop {
+      width: 110px;
+    }
+  }
+
+  .menu {
+    order: 2
+  }
+
+  .florGrafismo img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
+}

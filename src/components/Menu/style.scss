@@ -1,0 +1,31 @@
+@use "../../styles/mixins" as *;
+
+.menu {
+  display: none;
+
+  @include desktop {
+    display: flex;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    margin: 0 20px;
+
+    a {
+      font-weight: 400;
+      color: var(--primary-color);
+      font-size: 32px;
+
+      &:hover {
+        text-decoration-line: underline;
+      }
+    }
+  }
+}
