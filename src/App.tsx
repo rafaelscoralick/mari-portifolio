@@ -4,6 +4,7 @@ import './App.scss';
 import Header from './components/Header';
 import CarrouselClothesline from './components/CarrouselClothesline';
 
+// @ts-expect-error: Should expect error
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
