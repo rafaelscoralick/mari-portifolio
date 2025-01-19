@@ -1,13 +1,20 @@
+// import {
+//   BrowserRouter as Router,
+//   Routes,
+//   Route,
+//   Link,
+//   useParams,
+// } from 'react-router-dom';
+
 // import { useAllPrismicDocumentsByType } from '@prismicio/react';
 import './App.scss';
 import Header from './components/Header';
-import CarrouselClothesline from './components/CarrouselClothesline';
 
 // @ts-expect-error: Should expect error
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import ProjectsList from './components/ProjectsList';
+import Home from './Pages/Home';
 
 function App() {
   // const [data] = useAllPrismicDocumentsByType('project');
@@ -15,27 +22,26 @@ function App() {
   // useEffect(() => {
   //   console.log(data);
   // }, [data]);
+  const projects = [
+    {
+      name: 'Projeto 1',
+      link: '/projeto1',
+    },
+    {
+      name: 'Projeto 2',
+      link: '/projeto2',
+    },
+    {
+      name: 'Projeto 3',
+      link: '/projeto3',
+    },
+  ];
 
   return (
     <>
       <main className="container">
-        <Header />
-        <CarrouselClothesline
-          items={[
-            '/card1.png',
-            '/card2.png',
-            '/card3.png',
-            '/card4.png',
-            '/card5.png',
-          ]}
-        />
-        <div className="above-the-fold-text">
-          <h1>
-            UX/UI designer apaixonada por construir experiências que façam a
-            diferença na vida das pessoas e impulsionem negócios.
-          </h1>
-        </div>
-        <ProjectsList />
+        <Header projects={projects} />
+        <Home />
       </main>
     </>
   );

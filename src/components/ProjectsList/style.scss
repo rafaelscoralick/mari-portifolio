@@ -8,49 +8,67 @@
   margin: 0 auto;
   height: auto;
   justify-content: center;
+  height: 550px;
+  margin-bottom: 64px;
 
   &>div {
     display: flex;
     flex: 1;
+    justify-content: center;
   }
 
   .core {
-    display: flex;
-    flex-direction: column;
     width: 100%;
     margin: 0 auto;
-    height: auto;
-    justify-content: center;
+    height: 100%;
+    background-color: #366836;
+    border-radius: 0 10px 10px 0;
+
+
+    .inner {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin: 0 auto;
+      height: auto;
+      justify-content: center;
+      margin: 21px 64px;
+    }
+
+    p {
+      color: #FFF;
+
+      font-family: "Open Sans";
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
   }
 
   @include desktop {
     flex-direction: row;
-  }
 
-  &.side-right {
-    flex-direction: row-reverse;
-  }
+    &.side-right {
+      flex-direction: row-reverse;
 
-  .image-mockup {
-    width: 100%;
-    overflow: hidden;
-    border-radius: 10px;
-    background-color: var(--accent-color);
-    margin-bottom: 20px;
+      .core {
 
-    img {
-      height: auto;
-      max-height: 640px;
-      object-fit: cover;
-      object-position: center;
-      border-radius: 10px;
-      transition: transform 0.4s ease-in-out;
-    }
+        border-radius: 10px 0 0 10px;
+      }
 
-    &:hover {
-      img {
-        transform: scale(1.1);
+      .image-mockup {
+        border-radius: 0 10px 10px 0;
       }
     }
   }
+
+  .icons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+  }
+
+
 }

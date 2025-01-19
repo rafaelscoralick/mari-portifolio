@@ -3,13 +3,17 @@
 .header {
   position: relative;
   width: 100%;
+  max-width: 100vw;
   display: flex;
-  justify-content: space-between;
   margin-top: 59px;
+  top: 0;
+  margin: 0 auto;
 
   .logo {
-    margin-left: 24px;
     width: 64px;
+    position: absolute;
+    left: 24px;
+    top: 36px;
 
     @include desktop {
       width: 110px;
@@ -17,7 +21,8 @@
   }
 
   .menu {
-    order: 2
+    position: absolute;
+    right: 0;
   }
 
   .florGrafismo img {

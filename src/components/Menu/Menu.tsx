@@ -1,5 +1,11 @@
 import './style.scss';
-export default function Menu() {
+type MenuProps = {
+  projects: Array<{
+    name: string;
+    link: string;
+  }>;
+};
+export default function Menu({ projects }: MenuProps) {
   return (
     <div className="menu">
       <ul>
@@ -8,6 +14,13 @@ export default function Menu() {
         </li>
         <li>
           <a href="/projetos">projetos</a>
+          <ul>
+            {projects.map((project, index) => (
+              <li key={index}>
+                <a href={project.link}>{project.name}</a>
+              </li>
+            ))}
+          </ul>
         </li>
         <li>
           <a href="/sobre">sobre</a>

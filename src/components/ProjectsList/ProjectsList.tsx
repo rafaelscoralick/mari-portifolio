@@ -8,6 +8,24 @@ export default function ProjectsList() {
       description:
         'Encontre a manicure perfeita para fazer sua unha igual aquela imagem que você salvou em sua galeria.',
       imageMockup: '/mockup1.png',
+      backgroundImage: '/bg-hb-parceiros.png',
+      icons: [
+        {
+          icon: '/icon-mobile.png',
+          legend: 'Mobile',
+          hover: () => {},
+        },
+        {
+          icon: '/icon-agendamento.png',
+          legend: 'Agendamento',
+          hover: () => {},
+        },
+        {
+          icon: '/icon-manicure.png',
+          legend: 'Manicure',
+          hover: () => {},
+        },
+      ],
       onClick: () => {},
       side: Side.Left,
     },
@@ -16,6 +34,24 @@ export default function ProjectsList() {
       description:
         'Encontre a manicure perfeita para fazer sua unha igual aquela imagem que você salvou em sua galeria.',
       imageMockup: '/mockup1.png',
+      backgroundImage: '/bg-younail.png',
+      icons: [
+        {
+          icon: '/icon-mobile.png',
+          legend: 'Mobile',
+          hover: () => {},
+        },
+        {
+          icon: '/icon-agendamento.png',
+          legend: 'Agendamento',
+          hover: () => {},
+        },
+        {
+          icon: '/icon-manicure.png',
+          legend: 'Manicure',
+          hover: () => {},
+        },
+      ],
       onClick: () => {},
       side: Side.Right,
     },
@@ -24,6 +60,24 @@ export default function ProjectsList() {
       description:
         'Encontre a manicure perfeita para fazer sua unha igual aquela imagem que você salvou em sua galeria.',
       imageMockup: '/mockup1.png',
+      backgroundImage: '/bg-younail.png',
+      icons: [
+        {
+          icon: '/icon-mobile.png',
+          legend: 'Mobile',
+          hover: () => {},
+        },
+        {
+          icon: '/icon-agendamento.png',
+          legend: 'Agendamento',
+          hover: () => {},
+        },
+        {
+          icon: '/icon-manicure.png',
+          legend: 'Manicure',
+          hover: () => {},
+        },
+      ],
       onClick: () => {},
       side: Side.Left,
     },

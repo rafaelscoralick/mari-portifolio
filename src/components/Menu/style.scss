@@ -2,6 +2,7 @@
 
 .menu {
   display: none;
+  margin-top: 64px;
 
   @include desktop {
     display: flex;
@@ -21,10 +22,52 @@
     a {
       font-weight: 400;
       color: var(--primary-color);
-      font-size: 32px;
+      font-size: 24px;
+      text-decoration: none;
 
       &:hover {
         text-decoration-line: underline;
+      }
+    }
+  }
+}
+
+
+
+.menu {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    >li {
+      position: relative;
+
+      ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        padding: 0;
+        list-style: none;
+        z-index: 10;
+        margin-left: -36px;
+
+        li {
+          a {
+            padding: 0.5rem 1rem;
+            display: block;
+
+            &:hover {
+              background: var(--primary-color);
+            }
+          }
+        }
+      }
+
+      &:hover>ul {
+        display: block;
+        width: 600px;
       }
     }
   }

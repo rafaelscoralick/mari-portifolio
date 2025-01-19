@@ -1,7 +1,6 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
 import CardHero from '../CardHero';
 import './style.scss';
-import { Autoplay } from 'swiper/modules';
+import Carousel from '../Carrousel/Carrousel';
 
 interface CarouselProps {
   items: string[];
@@ -10,24 +9,11 @@ interface CarouselProps {
 export default function CarrouselClothesline({ items }: CarouselProps) {
   return (
     <div className="carrouselclothesline">
-      <Swiper
-        spaceBetween={0} // Configuração correta para a versão 9+
-        slidesPerView={1} // Exibe 3 slides visíveis
-        navigation={false}
-        pagination={{ clickable: true }}
-        loop={true}
-        modules={[Autoplay]}
-        autoplay={{
-          delay: 2500,
-          pauseOnMouseEnter: true,
-        }}
-      >
+      <Carousel items={1}>
         {items.map((item, index) => (
-          <SwiperSlide key={index}>
-            <CardHero image={item} />
-          </SwiperSlide>
+          <CardHero key={index} image={item} />
         ))}
-      </Swiper>
+      </Carousel>
     </div>
   );
 }
