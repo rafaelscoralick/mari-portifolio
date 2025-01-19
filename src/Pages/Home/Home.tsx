@@ -65,13 +65,15 @@ export default function Home() {
   function getSize() {
     const width = window.innerWidth;
     if (width > 1200) {
-      return 10;
+      return 9;
     } else if (width > 768) {
-      return 4;
+      return 6;
     } else {
       return 3;
     }
   }
+
+  console.log(getSize());
 
   return (
     <div className="home">

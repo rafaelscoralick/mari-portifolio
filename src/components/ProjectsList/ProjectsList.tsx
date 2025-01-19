@@ -13,17 +13,14 @@ export default function ProjectsList() {
         {
           icon: '/icon-mobile.png',
           legend: 'Mobile',
-          hover: () => {},
         },
         {
           icon: '/icon-agendamento.png',
           legend: 'Agendamento',
-          hover: () => {},
         },
         {
           icon: '/icon-manicure.png',
           legend: 'Manicure',
-          hover: () => {},
         },
       ],
       onClick: () => {},
