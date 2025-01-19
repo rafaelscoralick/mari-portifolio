@@ -27,7 +27,7 @@ export default function ProjectsListItem({
           <p>{description}</p>
 
           <div className="ver-mais">
-            <button>ver mais</button>
+            <button onClick={onClick}>VER MAIS</button>
           </div>
 
           <div className="icons">
