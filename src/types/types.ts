@@ -13,6 +13,5 @@ export interface IProjectsListItem {
     legend?: string;
     hover?: () => string;
   }>;
-  onClick: () => void;
   side: Side;
 }

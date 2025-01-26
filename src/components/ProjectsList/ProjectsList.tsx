@@ -23,7 +23,6 @@ export default function ProjectsList() {
           legend: 'Manicure',
         },
       ],
-      onClick: () => {},
       side: Side.Left,
     },
     {
@@ -46,7 +45,6 @@ export default function ProjectsList() {
           legend: 'Manicure',
         },
       ],
-      onClick: () => {},
       side: Side.Right,
     },
     {
@@ -69,7 +67,6 @@ export default function ProjectsList() {
           legend: 'Manicure',
         },
       ],
-      onClick: () => {},
       side: Side.Left,
     },
   ];

@@ -8,7 +8,6 @@ export default function ProjectsListItem({
   description,
   backgroundImage,
   icons,
-  onClick,
   side,
 }: IProjectsListItem) {
   return (
