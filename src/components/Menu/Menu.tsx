@@ -13,7 +13,7 @@ export default function Menu({ projects }: MenuProps) {
           <a href="/">home</a>
         </li>
         <li>
-          <a href="/projetos">projetos</a>
+          <a href="#projetos">projetos</a>
           <ul>
             {projects.map((project, index) => (
               <li key={index}>
@@ -23,10 +23,10 @@ export default function Menu({ projects }: MenuProps) {
           </ul>
         </li>
         <li>
-          <a href="/sobre">sobre</a>
+          <a href="#sobre">sobre</a>
         </li>
         <li>
-          <a href="/contato">contato</a>
+          <a href="#contato">contato</a>
         </li>
       </ul>
     </div>

@@ -1,0 +1,22 @@
+.sobre {
+  margin-top: 200px;
+
+  .aboutme,
+  .meucurriculo {
+    display: flex;
+    border: none;
+
+    .inner {
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    h3 {
+      font-size: 32px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+  }
+}

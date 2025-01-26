@@ -1,0 +1,71 @@
+@use "../../styles/mixins" as *;
+
+.meucurriculo {
+  display: none;
+  flex: 1;
+  border: 2px solid var(--background-color-darkmode-3, #3D753D);
+
+  border-radius: 16px;
+
+  .meucurriculobutton {
+    display: none;
+  }
+
+  @include desktop {
+    display: flex;
+    flex-direction: column;
+
+    .meucurriculobutton {
+      display: flex;
+    }
+  }
+
+  .inner {
+    padding: 32px 80px;
+
+    h3 {
+      color: #FFF;
+      font-family: "Rozha One";
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin: 0;
+      margin-bottom: 32px;
+    }
+
+    p {
+      color: #FFF;
+      font-family: "Open Sans";
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    strong {
+      font-weight: 400;
+      color: #FFC1B0;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      gap: 17px;
+
+      li {
+        color: #FFF;
+        font-family: "Open Sans";
+        border-radius: 8px;
+        border: 1px solid var(--verdin-4, #366836);
+        display: flex;
+        padding: 8px;
+        align-items: center;
+      }
+    }
+  }
+}

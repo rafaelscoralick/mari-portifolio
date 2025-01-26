@@ -1,10 +1,4 @@
-// import {
-//   BrowserRouter as Router,
-//   Routes,
-//   Route,
-//   Link,
-//   useParams,
-// } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 // import { useAllPrismicDocumentsByType } from '@prismicio/react';
 import './App.scss';
@@ -15,6 +9,11 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import Home from './Pages/Home';
+import NavBar from './components/NavBar';
+import Sobre from './Pages/Sobre';
+import Contato from './Pages/Contato';
+import Projetos from './Pages/Projetos';
+import ProjectYouNail from './Pages/ProjectYouNail';
 
 function App() {
   // const [data] = useAllPrismicDocumentsByType('project');
@@ -39,9 +38,16 @@ function App() {
 
   return (
     <>
-      <main className="container">
+      <main className="main">
         <Header projects={projects} />
-        <Home />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/sobre" element={<Sobre />} />
+          <Route path="/contato" element={<Contato />} />
+          <Route path="/projetos" element={<Projetos />} />
+          <Route path="/projetos/you-nail" element={<ProjectYouNail />} />
+        </Routes>
+        <NavBar />
       </main>
     </>
   );

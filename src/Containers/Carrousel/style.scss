@@ -1,0 +1,11 @@
+.carousel {
+  max-width: 100%;
+
+  .swiper-pagination-bullet {
+    background: rgba(247, 247, 247, 0.50);
+  }
+
+  .swiper-pagination-bullet-active {
+    background: #F7F7F7;
+  }
+}

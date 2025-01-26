@@ -1,0 +1,102 @@
+@use "../../styles/mixins" as *;
+
+.aboutme {
+  display: none;
+  flex: 1;
+  border: 2px solid var(--background-color-darkmode-3, #3D753D);
+  flex-direction: column;
+  border-radius: 16px;
+
+  .meucurriculobutton {
+    display: flex;
+  }
+
+  @include desktop {
+    display: flex;
+    flex-direction: column;
+
+    .meucurriculobutton {
+      display: none;
+    }
+  }
+
+  .inner {
+    padding: 32px 80px;
+
+    h3 {
+      color: #FFF;
+      font-family: "Rozha One";
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin: 0;
+      margin-bottom: 40px;
+    }
+
+    p {
+      color: #FFF;
+      font-family: "Open Sans";
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    strong {
+      font-weight: 400;
+      color: #FFC1B0;
+    }
+  }
+
+  .button-leiamais {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 32px;
+    padding: 16px 32px;
+    border-radius: 8px;
+    border: 2px solid #264A26;
+    background: #336333;
+    box-shadow: 0px 4px 8px 0px rgba(30, 52, 30, 0.16);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    .left {
+      display: flex;
+      align-items: center;
+
+      img {
+        height: 32px;
+      }
+    }
+
+    .right {
+      display: flex;
+      flex-direction: column;
+
+      .title {
+        color: #FFC1B0;
+        font-family: "Open Sans";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+      }
+
+      .text {
+        color: #FFF;
+        font-family: "Open Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+
+    &:hover {
+      background: #417f43;
+      box-shadow: 0px 4px 8px 0px rgba(30, 52, 30, 0.16);
+    }
+  }
+}

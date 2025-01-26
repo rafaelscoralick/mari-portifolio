@@ -24,10 +24,17 @@ export default function ProjectsListItem({
           <h3>
             <img src={logoProject} alt="logo-project" />
           </h3>
-          <p>{description}</p>
+          <span>{description}</span>
+
+          <div
+            className="image-mockup-mob"
+            style={{ backgroundImage: `url(${backgroundImage})` }}
+          >
+            <img src={imageMockup} alt="image-mockup" />
+          </div>
 
           <div className="ver-mais">
-            <button onClick={onClick}>VER MAIS</button>
+            <a href="/projetos/you-nail">VER MAIS</a>
           </div>
 
           <div className="icons">

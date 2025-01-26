@@ -1,11 +1,14 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import './style.scss';
-import { Autoplay } from 'swiper/modules';
+import { Autoplay, Pagination } from 'swiper/modules';
 import { Children } from 'react';
 
 interface CarouselProps {
   items?: number;
   autoplay?: boolean;
+  delay?: number;
+  dots?: boolean;
+  spaceBetween?: number;
   children: React.ReactNode;
 }
 
@@ -13,20 +16,37 @@ export default function Carousel({
   children,
   items = 1,
   autoplay = true,
+  delay = 2500,
+  spaceBetween = 0,
+  dots = false,
 }: CarouselProps) {
+  function handlerConfig({
+    autoplay,
+    dots,
+  }: {
+    autoplay: boolean;
+    dots: boolean;
+  }) {
+    const config = [autoplay ? Autoplay : null, dots ? Pagination : null];
+    return config.filter((item) => item !== null);
+  }
+
   return (
     <div className="carousel">
       <Swiper
-        spaceBetween={0}
+        spaceBetween={spaceBetween}
         slidesPerView={items}
         navigation={false}
-        pagination={{ clickable: true }}
+        pagination={{
+          enabled: dots,
+          clickable: true,
+        }}
         loop={true}
-        modules={autoplay ? [Autoplay] : []}
+        modules={handlerConfig({ autoplay, dots })}
         autoplay={
           autoplay
             ? {
-                delay: 2500,
+                delay: delay,
                 pauseOnMouseEnter: true,
               }
             : false

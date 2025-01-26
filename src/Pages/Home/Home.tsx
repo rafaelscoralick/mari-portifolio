@@ -1,9 +1,12 @@
-import Carousel from '../../components/Carrousel';
+import AboutMe from '../../components/AboutMe';
+import Carousel from '../../Containers/Carrousel';
 import CarrouselClothesline from '../../components/CarrouselClothesline';
 import Headline from '../../components/Headline';
 import Icon from '../../components/Icon';
+import MeuCurriculo from '../../components/MeuCurriculo';
 import ProjectsList from '../../components/ProjectsList';
 import './style.scss';
+import LinksPraContato from '../../components/LinksPraContato';
 export default function Home() {
   const icons = [
     {
@@ -97,7 +100,16 @@ export default function Home() {
         </Carousel>
       </div>
 
-      <ProjectsList />
+      <div id="projetos" className="container">
+        <ProjectsList />
+      </div>
+      <div id="sobre" className="row aboutme-row">
+        <AboutMe />
+        <MeuCurriculo />
+      </div>
+      <div id="contato">
+        <LinksPraContato />
+      </div>
     </div>
   );
 }
