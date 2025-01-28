@@ -8,7 +8,7 @@
 
 :root {
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: 300;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -27,6 +27,7 @@ body {
   min-height: 100vh;
   background-color: #{$background-color};
   margin-bottom: 80px;
+  font-family: "Open Sans";
 
   @include desktop {
     margin-bottom: 0;
@@ -40,14 +41,6 @@ body {
 html {
   scroll-behavior: smooth;
 }
-
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-
 
 button {
   border: none;
@@ -76,18 +69,18 @@ button {
 }
 
 .desktop-only {
-  display: none;
+  display: none !important;
 
   @include desktop {
-    display: flex;
+    display: flex !important;
   }
 }
 
 .mobile-only {
-  display: flex;
+  display: flex !important;
 
   @include desktop {
-    display: none;
+    display: none !important;
   }
 }
 

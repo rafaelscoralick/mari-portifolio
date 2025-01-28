@@ -10,7 +10,6 @@
   margin: 0 auto;
   height: auto;
   justify-content: center;
-  height: 580px;
   margin-bottom: 64px;
 
   @include desktop {
@@ -96,8 +95,7 @@
     background: #336333;
     box-shadow: 0px 4px 8px 0px rgba(30, 52, 30, 0.16);
     cursor: pointer;
-    margin: 24px;
-
+    margin: 40px 24px;
 
     &:hover {
       background: #264A26;
@@ -106,7 +104,7 @@
 
     a {
       font-family: "Open Sans";
-      padding: 22px;
+      padding: 10px;
       width: 100%;
       text-align: center;
       color: #FFF;
@@ -147,11 +145,12 @@
       flex-direction: column;
       width: 100%;
       height: auto;
-      justify-content: start;
+      justify-content: center;
       padding-top: 24px;
 
       .image-mockup-mob {
         justify-content: center;
+        margin-top: 24px;
       }
 
     }
@@ -159,6 +158,10 @@
     h3 {
       margin: 0 24px;
       margin-bottom: 16px;
+
+      @include desktop {
+        margin-bottom: 24px;
+      }
 
       img {
         height: 24px;
@@ -174,9 +177,6 @@
 
       font-family: "Open Sans";
       font-size: 18px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
       margin: 0 24px;
 
       @include desktop {

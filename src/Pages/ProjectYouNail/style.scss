@@ -1,70 +1,6 @@
 @use "../../styles/mixins" as *;
 
 .projectyounail {
-  max-width: 100%;
-
-  .abovethefold {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-
-    @include desktop {
-      padding: 0 100px 100px;
-    }
-
-    img {
-      width: 100%;
-
-    }
-
-    p {
-      font-family: "Open Sans";
-      font-size: 12px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
-    }
-  }
-
-  .discovery {
-    background: #366836;
-
-    @include desktop {
-      .w50 {
-        width: 50%;
-      }
-    }
-  }
-
-  iframe {
-    margin: 0 auto;
-    display: flex;
-    border-radius: 16px;
-  }
-
-
-  .session-project {
-    display: flex;
-    flex-direction: row;
-
-    div {
-      flex: 1;
-    }
-
-    @include desktop {
-      margin: 40px 0;
-
-      h2,
-      h3,
-      p {
-        padding: 0;
-        margin: 0;
-      }
-    }
-  }
-
   .uvp {
     @include desktop {
       background-color: #417F43;
@@ -75,7 +11,8 @@
       margin: 80px 0;
 
       h2,
-      h3 {
+      h3,
+      h4 {
         padding: 0;
         margin: 0;
       }

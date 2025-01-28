@@ -28,9 +28,6 @@
     color: #FFE7DE;
     font-family: "Rozha One";
     font-size: 32px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     margin: 0;
     margin-bottom: 32px;
 
@@ -43,9 +40,6 @@
     color: #FFC1B0;
     font-family: "Open Sans";
     font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
 
     @include desktop {
       color: #FFF;
@@ -89,9 +83,6 @@
         color: #FFF;
         font-family: "Rozha One";
         font-size: 24px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
         transition: all 0.3s ease-in-out;
         flex-direction: column;
 
@@ -118,9 +109,6 @@
           color: #FFE7DE;
           font-family: "Open Sans";
           font-size: 12px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: normal;
           margin-top: 10px;
         }
 

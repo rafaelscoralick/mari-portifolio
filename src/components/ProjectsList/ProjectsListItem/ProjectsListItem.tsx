@@ -30,7 +30,7 @@ export default function ProjectsListItem({
           </div>
 
           <div className="ver-mais">
-            <a href="/projetos/you-nail">VER MAIS</a>
+            <a href="/projetos/you-nail">ver mais</a>
           </div>
 
           <div className="icons">

@@ -2,6 +2,7 @@
 
 .page {
   min-height: 100vh;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,9 +10,9 @@
   margin-top: 140px;
 
   @include desktop {
-    padding: 0 100px;
-    flex-direction: column;
-    margin-top: 240px;
+    // padding: 0 100px;
+    // flex-direction: column;
+    // margin-top: 240px;
   }
 
   p,
@@ -19,47 +20,56 @@
   h2,
   h3,
   sub {
-    margin: 24px;
+    margin: 16px 24px;
+  }
+
+  .project-main {
+    border-radius: 16px;
+    background: #366836;
+  }
+
+  .project-title {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    h1 {
+      display: flex;
+      margin: 16px 24px;
+    }
   }
 
   h1 {
-    color: var(--accent-color, #FFC1B0);
+    color: #FFE7DE;
     font-family: "Rozha One";
     font-size: 32px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: lowercase;
   }
 
   h2 {
-    color: #FFF;
+    color: #FFE7DE;
     font-family: "Rozha One";
     font-size: 32px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     text-transform: lowercase;
     margin-top: 80px;
     margin-bottom: 40px;
+
+    @include desktop {
+      font-size: 48px;
+    }
   }
 
   h3 {
-    color: #FFC1B0;
+    color: #FFE7DE;
     font-family: "Open Sans";
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
-
   }
 
   sub {
     color: #FFF;
     font-family: "Open Sans";
     font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     display: block;
   }
 
@@ -67,12 +77,9 @@
     color: #FFF;
     font-family: "Open Sans";
     font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
 
     strong {
-      font-weight: 400;
+      font-weight: 300;
       color: var(--salmo-1, #FFC1B0);
     }
   }
@@ -95,6 +102,7 @@
 
     span {
       font-size: 14px;
+      max-width: 170px;
     }
   }
 
@@ -127,17 +135,108 @@
     color: #FFC1B0;
     font-family: "Open Sans";
     font-size: 18px;
-    font-style: normal;
     font-weight: 600;
-    line-height: normal;
     width: 100%;
   }
 
   .masonry {
+    gap: 24px;
+
     .masonry-item {
-      img {
-        width: 628px;
-        height: 820px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      width: 50%;
+      gap: 24px;
+
+      .imgsmall img {
+        width: 292px;
+        height: auto;
+      }
+
+      .disclaimer-container {
+        background-image: url('/banners/Rectangle482.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 16px;
+      }
+
+      .disclaimer {
+
+        img {
+          display: flex;
+          align-self: anchor-center;
+          width: 28px;
+          height: 30px;
+        }
+      }
+
+      .row {
+        gap: 24px;
+      }
+    }
+  }
+
+  .abovethefold {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    @include desktop {
+      padding: 0 100px 100px;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    p {
+      font-family: "Open Sans";
+      font-size: 12px;
+      font-weight: 400;
+    }
+  }
+
+  .discovery {
+    background: #366836;
+
+    @include desktop {
+      .w50 {
+        width: 50%;
+      }
+    }
+  }
+
+  iframe {
+    margin: 0 auto;
+    display: flex;
+    border-radius: 16px;
+  }
+
+  .session-project {
+    display: flex;
+    flex-direction: row;
+
+    div {
+      flex: 1;
+    }
+
+    @include desktop {
+      margin: 40px 0;
+
+      h2,
+      h3,
+      p {
+        padding: 0;
+        margin: 0;
       }
     }
   }
