@@ -14,6 +14,7 @@ import Sobre from './Pages/Sobre';
 import Contato from './Pages/Contato';
 import Projetos from './Pages/Projetos';
 import ProjectYouNail from './Pages/ProjectYouNail';
+import Footer from './components/Footer';
 
 function App() {
   // const [data] = useAllPrismicDocumentsByType('project');
@@ -23,16 +24,16 @@ function App() {
   // }, [data]);
   const projects = [
     {
-      name: 'Projeto 1',
-      link: '/projeto1',
+      name: 'you-nail',
+      link: '/#younail',
     },
     {
-      name: 'Projeto 2',
-      link: '/projeto2',
+      name: 'honey parceiros',
+      link: '/#honey',
     },
     {
-      name: 'Projeto 3',
-      link: '/projeto3',
+      name: 'shopee',
+      link: '/#shopee',
     },
   ];
 
@@ -48,6 +49,7 @@ function App() {
           <Route path="/projetos/you-nail" element={<ProjectYouNail />} />
         </Routes>
         <NavBar />
+        <Footer />
       </main>
     </>
   );

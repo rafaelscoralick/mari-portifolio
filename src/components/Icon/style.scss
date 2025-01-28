@@ -1,10 +1,12 @@
+@use "../../styles/mixins" as *;
+
 .icon {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin: 34px 15px;
+  margin: 34px 15px 50px;
   border-radius: 8px;
   border: 3px solid #316031;
   background: #264A26;
@@ -12,6 +14,10 @@
 
   height: 100px;
   width: 100px;
+
+  @include desktop {
+    margin: 34px 29px 50px;
+  }
 
   &.show {
     border-radius: 8px;

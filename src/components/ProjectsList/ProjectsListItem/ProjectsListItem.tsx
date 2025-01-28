@@ -25,10 +25,7 @@ export default function ProjectsListItem({
           </h3>
           <span>{description}</span>
 
-          <div
-            className="image-mockup-mob"
-            style={{ backgroundImage: `url(${backgroundImage})` }}
-          >
+          <div className="image-mockup-mob">
             <img src={imageMockup} alt="image-mockup" />
           </div>
 

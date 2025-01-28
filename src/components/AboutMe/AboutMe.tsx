@@ -37,15 +37,30 @@ export default function AboutMe() {
             </div>
           }
         >
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
-            risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing
-            nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas
-            ligula massa, varius quis, laoreet windows, posuere nec, leo. Duis
-            ut mi. Cum sociis natoque penatibus et magnis dis parturient montes,
-            nascetur ridiculus mus. Donec quam felis, ultricies nec,
-            pellentesque eu,
-          </p>
+          <div className="row">
+            <div className="desktop-only">
+              <img src="/banners/carioca.png" alt="carioca" />
+            </div>
+            <div className="content">
+              <h3>crônicas urbanas de uma carioca inspirada</h3>
+              <p>
+                Carioca do Aterro do Flamengo. Desde cedo compartilhava a
+                curiosidade de meu pai sobre a cidade - isto se refletia no
+                costume de gravar quem eram meus amigos pelo bairro em que
+                residiam. Quem me conhecer provavelmente vai me ver repetir essa
+                mesma pergunta, mas saiba que é uma forma de lidar com a memória
+                urbana.
+              </p>
+              <h4>“filha do biscoito Globo com baião de dois”</h4>
+              <p>
+                Em minhas raízes há a mistura do Rio e Ceará (mãe e pai), e
+                também no meu cotidiano. Foi um espanto descobrir que muitos
+                conterrâneos não sabiam que existia cuscuz salgado. Sou filha do
+                biscoito Globo com o baião de dois, do Mate Leão com as
+                garrafadas e as ervas do sertão.
+              </p>
+            </div>
+          </div>
         </LeiaMais>
       </div>
     </div>

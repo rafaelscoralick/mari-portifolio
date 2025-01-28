@@ -17,14 +17,14 @@ export default function LinksPraContato() {
           </li>
           <li>
             <a href="/">
-              <img src="/svg/whatsapp.svg" alt="whatsapp" />
-              <span>whatsapp</span>
+              <img src="/svg/linkedin.svg" alt="linkedin" />
+              <span>linkedin</span>
             </a>
           </li>
           <li>
             <a href="/">
-              <img src="/svg/whatsapp.svg" alt="whatsapp" />
-              <span>whatsapp</span>
+              <img src="/svg/mail.svg" alt="e-mail" />
+              <span>e-mail</span>
             </a>
           </li>
         </ul>

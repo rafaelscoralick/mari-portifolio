@@ -10,9 +10,7 @@
 
   @include desktop {
     padding: 0 100px;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
+    flex-direction: column;
     margin-top: 240px;
   }
 
@@ -86,6 +84,10 @@
     margin: 24px;
     padding: 16px;
 
+    @include desktop() {
+      margin: 24px 0;
+    }
+
     img {
       margin-right: 24px;
       margin-left: 16px;
@@ -117,6 +119,7 @@
     img {
       height: 32px;
       margin-right: 24px;
+      margin-left: 16px;
     }
   }
 
@@ -130,9 +133,12 @@
     width: 100%;
   }
 
-  .custombutton {
-    margin: 0 auto;
-    margin-bottom: 40px;
+  .masonry {
+    .masonry-item {
+      img {
+        width: 628px;
+        height: 820px;
+      }
+    }
   }
-
 }

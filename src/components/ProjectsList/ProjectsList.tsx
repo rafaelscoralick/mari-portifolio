@@ -4,6 +4,7 @@ import './style.scss';
 export default function ProjectsList() {
   const data: IProjectsListItem[] = [
     {
+      name: 'younail',
       logoProject: '/younail-icon.png',
       description:
         'Encontre a manicure perfeita para fazer sua unha igual aquela imagem que você salvou em sua galeria.',
@@ -26,45 +27,47 @@ export default function ProjectsList() {
       side: Side.Left,
     },
     {
-      logoProject: '/younail-icon.png',
+      name: 'honey',
+      logoProject: '/honey-icon.png',
       description:
-        'Encontre a manicure perfeita para fazer sua unha igual aquela imagem que você salvou em sua galeria.',
-      imageMockup: '/mockup1.png',
-      backgroundImage: '/bg-younail.png',
+        'Painel para programa de afiliados, acompanhamento de vendas, pagamento de comissão e capacitação em marketing digital.',
+      imageMockup: '/mockup2.png',
+      backgroundImage: '/bg-hb-parceiros.png',
       icons: [
         {
-          icon: '/icon-mobile.png',
-          legend: 'Mobile',
+          icon: '/svg/web.svg',
+          legend: 'web',
         },
         {
-          icon: '/icon-agendamento.png',
-          legend: 'Agendamento',
+          icon: '/svg/moda.svg',
+          legend: 'ecommerce moda',
         },
         {
-          icon: '/icon-manicure.png',
-          legend: 'Manicure',
+          icon: '/svg/vendas.svg',
+          legend: 'painel vendas',
         },
       ],
       side: Side.Right,
     },
     {
-      logoProject: '/younail-icon.png',
+      name: 'shopee',
+      logoProject: '/shopee-icon.png',
       description:
-        'Encontre a manicure perfeita para fazer sua unha igual aquela imagem que você salvou em sua galeria.',
-      imageMockup: '/mockup1.png',
-      backgroundImage: '/bg-younail.png',
+        'Redesign do fluxo de Carrinho e Checkout do aplicativo de varejo eletrônico Shopee.',
+      imageMockup: '/mockup3.png',
+      backgroundImage: '/bg-hb-parceiros.png',
       icons: [
         {
           icon: '/icon-mobile.png',
-          legend: 'Mobile',
+          legend: 'mobile',
         },
         {
-          icon: '/icon-agendamento.png',
-          legend: 'Agendamento',
+          icon: '/svg/ecommerce.svg',
+          legend: 'ecmomerce',
         },
         {
-          icon: '/icon-manicure.png',
-          legend: 'Manicure',
+          icon: '/svg/pagamentos.svg',
+          legend: 'pagamento',
         },
       ],
       side: Side.Left,
@@ -76,7 +79,9 @@ export default function ProjectsList() {
       <h2>Projetos</h2>
       <div className="projectslist-items">
         {data.map((item, index) => (
-          <Project key={index} {...item} />
+          <div key={index} id={item.name}>
+            <Project {...item} />
+          </div>
         ))}
       </div>
     </div>

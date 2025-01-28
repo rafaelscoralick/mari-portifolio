@@ -4,6 +4,7 @@ export enum Side {
 }
 
 export interface IProjectsListItem {
+  name?: string;
   logoProject: string;
   description: string;
   imageMockup: string;

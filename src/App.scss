@@ -30,6 +30,10 @@ body {
 
   @include desktop {
     margin-bottom: 0;
+    background-image: url('/banners/Maskgroup_desktop.png'), url(''), url('');
+    background-position: top right, top left, bottom left;
+    background-repeat: no-repeat;
+    background-size: auto;
   }
 }
 
@@ -71,6 +75,22 @@ button {
   margin: 0 auto;
 }
 
+.desktop-only {
+  display: none;
+
+  @include desktop {
+    display: flex;
+  }
+}
+
+.mobile-only {
+  display: flex;
+
+  @include desktop {
+    display: none;
+  }
+}
+
 .row {
   display: flex;
   flex-direction: column;
@@ -87,7 +107,16 @@ button {
   justify-content: center;
   gap: 16px;
 
-  @include desktop {
-    display: none;
-  }
+}
+
+.column {
+  flex-direction: column;
+}
+
+.je {
+  justify-content: space-evenly;
+}
+
+.jc {
+  justify-content: center;
 }

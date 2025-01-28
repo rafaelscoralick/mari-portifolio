@@ -10,57 +10,63 @@ import LinksPraContato from '../../components/LinksPraContato';
 export default function Home() {
   const icons = [
     {
-      icon: '/icon-mobile.png',
+      icon: '/svg/figma.svg',
       hover: () => {
-        return 'ver mais';
+        return 'figma';
       },
     },
     {
-      icon: '/icon-agendamento.png',
+      icon: '/svg/maze.svg',
       hover: () => {
-        return 'ver mais';
+        return 'maze';
       },
     },
     {
-      icon: '/icon-manicure.png',
+      icon: '/svg/xd.svg',
       hover: () => {
-        return 'ver mais';
+        return 'xd';
       },
     },
     {
-      icon: '/icon-mobile.png',
+      icon: '/svg/jira.svg',
       hover: () => {
-        return 'ver mais';
+        return 'jira';
       },
     },
     {
-      icon: '/icon-agendamento.png',
+      icon: '/svg/miro.svg',
       hover: () => {
-        return 'ver mais';
+        return 'miro';
       },
     },
     {
-      icon: '/icon-manicure.png',
+      icon: '/svg/notion.svg',
       hover: () => {
-        return 'ver mais';
+        return 'notion';
       },
     },
     {
-      icon: '/icon-mobile.png',
+      icon: '/svg/trello.svg',
       hover: () => {
-        return 'ver mais';
+        return 'trello';
       },
     },
     {
-      icon: '/icon-agendamento.png',
+      icon: '/svg/gpt.svg',
       hover: () => {
-        return 'ver mais';
+        return 'chat gpt';
       },
     },
     {
-      icon: '/icon-manicure.png',
+      icon: '/svg/photoshop.svg',
       hover: () => {
-        return 'ver mais';
+        return 'photoshop';
+      },
+    },
+    {
+      icon: '/svg/illustrator.svg',
+      hover: () => {
+        return 'illustrator';
       },
     },
   ];
@@ -107,7 +113,7 @@ export default function Home() {
         <AboutMe />
         <MeuCurriculo />
       </div>
-      <div id="contato">
+      <div id="contato" className="desktop-only">
         <LinksPraContato />
       </div>
     </div>

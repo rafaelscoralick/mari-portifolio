@@ -1,44 +1,83 @@
+@use '../../styles/mixins.scss' as *;
+
 .linkspracontato {
   display: flex;
-  padding: 40px 32px;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  margin: 22px auto;
 
-  border-radius: 16px;
-  background: #366836;
-  box-shadow: 0px 8px 16px 0px rgba(30, 52, 30, 0.16);
-  margin: 80px auto;
+  @include desktop() {
+    border-radius: 16px;
+    box-shadow: 0px 8px 16px 0px rgba(30, 52, 30, 0.16);
+    background: #366836;
+    padding: 40px 32px;
+  }
 
   .row {
     justify-content: space-around;
     flex: 1;
+
+    @include desktop() {
+      gap: 200px;
+    }
+
   }
 
   h3 {
     color: #FFE7DE;
     font-family: "Rozha One";
-    font-size: 48px;
+    font-size: 32px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     margin: 0;
     margin-bottom: 32px;
+
+    // @include desktop() {
+    //   font-size: 48px;
+    // }
+  }
+
+  .text {
+    color: #FFC1B0;
+    font-family: "Open Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    @include desktop {
+      color: #FFF;
+      // font-size: 32px;
+    }
   }
 
   ul {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     list-style: none;
     padding: 0;
     margin: 0;
     flex: 1;
+    margin-top: 40px;
+
+    @include desktop() {
+      margin-top: 0;
+      gap: 16px;
+    }
 
     li {
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 16px;
+
+      @include desktop() {
+        background: none;
+        width: 100px;
+      }
+
 
       a {
         display: flex;
@@ -56,17 +95,33 @@
         transition: all 0.3s ease-in-out;
         flex-direction: column;
 
+
+        width: 50px;
+        height: 50px;
+
         img {
-          height: 24px;
+          height: 88px;
+          border-radius: 7px;
+          border: 2.6px solid #316031;
+          padding: 12px;
+          box-shadow: 0px 3.467px 6.933px 0px rgba(30, 52, 30, 0.16);
+
+          @include desktop() {
+            border: none;
+            background: #264A26;
+            height: 100px;
+
+          }
         }
 
         span {
-          color: var(--primary-color, #FFE7DE);
+          color: #FFE7DE;
           font-family: "Open Sans";
           font-size: 12px;
           font-style: normal;
           font-weight: 400;
           line-height: normal;
+          margin-top: 10px;
         }
 
         &:hover {

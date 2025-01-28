@@ -1,7 +1,7 @@
 @use "../../styles/mixins" as *;
 
 .projectyounail {
-  width: 100vw;
+  max-width: 100%;
 
   .abovethefold {
     display: flex;
@@ -30,11 +30,55 @@
 
   .discovery {
     background: #366836;
+
+    @include desktop {
+      .w50 {
+        width: 50%;
+      }
+    }
   }
 
   iframe {
     margin: 0 auto;
     display: flex;
     border-radius: 16px;
+  }
+
+
+  .session-project {
+    display: flex;
+    flex-direction: row;
+
+    div {
+      flex: 1;
+    }
+
+    @include desktop {
+      margin: 40px 0;
+
+      h2,
+      h3,
+      p {
+        padding: 0;
+        margin: 0;
+      }
+    }
+  }
+
+  .uvp {
+    @include desktop {
+      background-color: #417F43;
+      padding: 54px 96px 93px 96px;
+      display: flex;
+      align-items: center;
+      border-radius: 16px;
+      margin: 80px 0;
+
+      h2,
+      h3 {
+        padding: 0;
+        margin: 0;
+      }
+    }
   }
 }

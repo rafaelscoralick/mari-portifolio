@@ -1,3 +1,5 @@
+@use "../../styles/mixins" as *;
+
 .custombutton {
   display: flex;
   width: 312px;
@@ -13,6 +15,13 @@
 
   text-decoration: none;
   color: unset;
+
+  margin: 0 auto;
+  margin-bottom: 40px;
+
+  @include desktop {
+    margin: 16px;
+  }
 
   h4 {
     margin: 0;

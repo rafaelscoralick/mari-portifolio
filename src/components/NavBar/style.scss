@@ -40,8 +40,7 @@
           display: flex;
           align-items: center;
           justify-content: center;
-          height: 100%;
-          width: 100%;
+
           text-decoration: none;
           color: #FFF;
           font-family: "Rozha One";
@@ -52,9 +51,10 @@
           transition: all 0.3s ease-in-out;
           flex-direction: column;
 
-          img {
-            height: 24px;
-          }
+          // img {
+          //   height: 30px;
+          //   width: 30px;
+          // }
 
           span {
             color: var(--primary-color, #FFE7DE);
