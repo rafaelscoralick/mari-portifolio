@@ -10,9 +10,15 @@
   margin-top: 140px;
 
   @include desktop {
-    // padding: 0 100px;
-    // flex-direction: column;
-    // margin-top: 240px;
+    //o menu fica visivel
+    margin-top: 260px;
+
+    h2,
+    h3,
+    p {
+      padding: 0;
+      margin: 0;
+    }
   }
 
   p,
@@ -26,6 +32,10 @@
   .project-main {
     border-radius: 16px;
     background: #366836;
+
+    @include tablet() {
+      height: calc(522px);
+    }
   }
 
   .project-title {
@@ -36,15 +46,21 @@
     h1 {
       display: flex;
       margin: 16px 24px;
+
+      @include tablet() {
+        margin: 32px 24px;
+      }
     }
   }
 
+  .section-project h1,
   h1 {
     color: #FFE7DE;
     font-family: "Rozha One";
     font-size: 32px;
   }
 
+  .section-project h2,
   h2 {
     color: #FFE7DE;
     font-family: "Rozha One";
@@ -54,16 +70,22 @@
     margin-bottom: 40px;
 
     @include desktop {
-      font-size: 48px;
+      font-size: 40px;
     }
   }
 
+  .section-project h3,
   h3 {
     color: #FFE7DE;
-    font-family: "Open Sans";
+    font-family: "Rozha One";
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
+    margin-bottom: 24px;
+
+    @include desktop {
+      font-size: 32px;
+    }
   }
 
   sub {
@@ -91,6 +113,8 @@
     margin: 24px;
     padding: 16px;
 
+
+
     @include desktop() {
       margin: 24px 0;
     }
@@ -102,7 +126,11 @@
 
     span {
       font-size: 14px;
-      max-width: 170px;
+
+      @include tablet() {
+        max-width: unset;
+      }
+
     }
   }
 
@@ -115,7 +143,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 16px;
     margin: 24px;
     border-radius: 8px;
@@ -149,10 +177,17 @@
       width: 50%;
       gap: 24px;
 
-      .imgsmall img {
-        width: 292px;
-        height: auto;
+      img {
+        height: 820px;
+        width: auto;
       }
+
+      .imgsmall img {
+        width: 312px;
+        height: 273px;
+      }
+
+
 
       .disclaimer-container {
         background-image: url('/banners/Rectangle482.png');
@@ -221,23 +256,17 @@
     border-radius: 16px;
   }
 
-  .session-project {
+  .section-project {
     display: flex;
     flex-direction: row;
 
-    div {
-      flex: 1;
-    }
-
     @include desktop {
       margin: 40px 0;
+      margin-top: 120px;
+    }
 
-      h2,
-      h3,
-      p {
-        padding: 0;
-        margin: 0;
-      }
+    div {
+      flex: 1;
     }
   }
 }

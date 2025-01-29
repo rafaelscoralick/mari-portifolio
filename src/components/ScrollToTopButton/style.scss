@@ -6,12 +6,14 @@
   right: 20px;
   padding: 28px 19px;
   font-size: 16px;
-  border-radius: 50%;
-  background-color: #FF7336;
   color: #FFC1B0;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  border-radius: 84px;
+  border: 2px solid var(--primary-color, #FFE7DE);
+  background: rgba(255, 231, 222, 0.20);
   cursor: pointer;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
+  transition: opacity 0.3s ease, visibility 0.3s ease, background 0.3s ease;
   display: flex;
   flex-direction: column;
   justify-content: center;

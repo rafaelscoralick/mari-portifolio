@@ -17,11 +17,12 @@
   }
 
   li {
-    margin: 0 20px;
+    padding: 12px 20px;
 
     a {
       color: var(--primary-color);
       font-size: 24px;
+      font-family: "rozha one";
       text-decoration: none;
 
       &:hover {
@@ -39,34 +40,53 @@
     padding: 0;
     margin: 0;
 
+
+
     >li {
       position: relative;
 
       ul {
         display: none;
         position: absolute;
-        top: 100%;
-        left: 0;
+        top: 50px;
+        left: 56px;
         padding: 0;
         list-style: none;
         z-index: 10;
         margin-left: -36px;
 
+        background: #264A26;
+        border-radius: 0 0 16px 16px;
+        border: 1px solid #FFE7DE;
+
         li {
           a {
             padding: 0.5rem 1rem;
             display: block;
+            position: relative;
 
             &:hover {
               background: var(--primary-color);
             }
+
+
+          }
+
+          &:not(:last-child):after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: #FFE7DE;
           }
         }
       }
 
       &:hover>ul {
         display: block;
-        width: 600px;
+        width: 300px;
       }
     }
   }

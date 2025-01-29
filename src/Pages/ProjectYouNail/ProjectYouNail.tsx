@@ -32,16 +32,8 @@ export default function ProjectYouNail() {
               </p>
             </div>
             <div className="row">
-              <div className="disclaimer-container">
-                <div className="disclaimer">
-                  <img src="/svg/disclaimer.svg" alt="disclaimer" />
-                  <span>
-                    O produto foi pensado e desenvolvido durante o curso de
-                    Product Design na TheStarter - Cursos Avançados de Ux. Neste
-                    estudo de caso foi desenvolvido o fluxo de busca por imagem
-                    e tags.
-                  </span>
-                </div>
+              <div className="imgsmall">
+                <img src="/banners/Rectangle482.png" alt="younailbanner" />
               </div>
               <div className="imgsmall">
                 <img src="/banners/Rectangle483.png" alt="younailbanner" />
@@ -54,16 +46,16 @@ export default function ProjectYouNail() {
         </div>
         {/* /////////////////////////////// */}
         <div className="abovethefold mobile-only">
-          <div className="project-title">
-            <h1>You.Nail</h1>
-          </div>
           <img src="/banners/younailvogue.png" alt="younailvogue" />
           <p>
             Créditos da imagem: Capa matéria Hailey Bieber. Crédito: Vogue
             America. Imagem: @haileybieber
           </p>
+          <div className="project-title">
+            <h1>You.Nail</h1>
+          </div>
         </div>
-        <div>
+        <div className="mobile-only column">
           <h3>Tendência para suas unhas</h3>
           <p>
             Milhões de técnicas e tendências de manicure aparecem todos os dias.
@@ -92,27 +84,32 @@ export default function ProjectYouNail() {
           </div>
         </div>
         {/* /////////////////////////////// */}
-        <div className="session-project">
+        <div className="section-project">
           <div className="desktop-only">
             <h2>Sobre o projeto</h2>
           </div>
           <div>
-            <h3>Meu papel</h3>
-            <p>
-              Neste projeto atuei como Product Designer. Desenvolvi as
-              estratégias para lançamento do produto e toda parte de pesquisa e
-              resolução do problema de design.
-            </p>
-            <h3>Desafio</h3>
-            <p>
-              A ampla gama de termos utilizados para descrever serviços de
-              manicure, como extensão, alongamento, gel, acrílico, tips, nail
-              design, designer de unhas, pode causar confusão e mal-entendidos
-              entre clientes e profissionais. O desafio enfrentado é criar um
-              fluxo de busca eficiente que gere menos confusão na hora do
-              agendamento e maior assertividade para encontrar o serviço
-              desejado.
-            </p>
+            <div className="sub-section">
+              <h2 className="mobile-only">sobre o projeto</h2>
+              <h3>Meu papel</h3>
+              <p>
+                Neste projeto atuei como Product Designer. Desenvolvi as
+                estratégias para lançamento do produto e toda parte de pesquisa
+                e resolução do problema de design.
+              </p>
+            </div>
+            <div className="sub-section">
+              <h3>Desafio</h3>
+              <p>
+                A ampla gama de termos utilizados para descrever serviços de
+                manicure, como extensão, alongamento, gel, acrílico, tips, nail
+                design, designer de unhas, pode causar confusão e mal-entendidos
+                entre clientes e profissionais. O desafio enfrentado é criar um
+                fluxo de busca eficiente que gere menos confusão na hora do
+                agendamento e maior assertividade para encontrar o serviço
+                desejado.
+              </p>
+            </div>
           </div>
         </div>
         <div className="banner mobile-only">
@@ -121,11 +118,12 @@ export default function ProjectYouNail() {
         <div className="banner desktop-only">
           <img src="/banners/Rectangle.png" alt="younailbanner" />
         </div>
-        <div className="session-project">
+        <div className="section-project">
           <div className="desktop-only">
             <h2>o problema</h2>
           </div>
           <div>
+            <h2 className="mobile-only">o problema</h2>
             <h3>Hipótese</h3>
             <p>
               Acredito que ao padronizar os termos de serviços de manicure e
@@ -151,7 +149,7 @@ export default function ProjectYouNail() {
             </div>
           </div>
         </div>
-        <div className="session-project">
+        <div className="section-project">
           <div className="desktop-only">
             <h2>Solução Proposta</h2>
           </div>
@@ -181,12 +179,8 @@ export default function ProjectYouNail() {
           </div>
         </div>
         <div className="uvp">
-          <div className="desktop-only column">
-            <h2>UVP</h2>
-            <h4>Unique value proposition</h4>
-          </div>
           <div>
-            <span className="mobile-only">
+            <span className="">
               <h2>UVP</h2>
               <h4>Unique value proposition</h4>
             </span>
@@ -200,14 +194,13 @@ export default function ProjectYouNail() {
         <div className="banner mobile-only">
           <img src="/banners/exemplo2.png" alt="younailbanner" />
         </div>
-        <div className="session-project">
+        <div className="section-project">
           <div className="desktop-only">
             <h2>O processo</h2>
           </div>
           <div>
             <h2 className="mobile-only">O processo</h2>
-            <h3 className="mobile-only">Discovery & Delivery</h3>
-            <h2 className="desktop-only">Discovery & Delivery</h2>
+            <h3>Discovery & Delivery</h3>
             <p>
               O projeto está dividido em duas grandes fases: Discovery e
               Delivery. Na primeira iremos mergulhar no problema, já na segunda
@@ -231,7 +224,7 @@ export default function ProjectYouNail() {
         <div className="discovery">
           <div className="row">
             <div className="w50">
-              <h2>Discovery</h2>
+              <h3>Discovery</h3>
               <p>
                 O projeto está dividido em duas grandes fases: Discovery e
                 Delivery. Na primeira iremos mergulhar no problema, já na
@@ -244,7 +237,7 @@ export default function ProjectYouNail() {
           </div>
         </div>
         <div className="discovery">
-          <h2>Delivery</h2>
+          <h3>Delivery</h3>
           <p>
             Esta é a parte que iremos desenvolver os entregáveis do projeto.
             Neste projeto não desenvolvi testes de usabilidade, mas são
@@ -260,7 +253,7 @@ export default function ProjectYouNail() {
           allowFullScreen
           style={{ border: '1px solid rgba(0, 0, 0, 0.1)' }}
         ></iframe>
-        <div className="session-project">
+        <div className="section-project">
           <div className="desktop-only">
             <h2>Conclusão</h2>
           </div>

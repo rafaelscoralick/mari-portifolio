@@ -9,10 +9,9 @@
     padding: 0;
   }
 
-  button {
+  a {
     display: flex;
     height: 60px;
-    width: 100%;
     padding: 22px 53px;
     justify-content: center;
     align-items: center;
@@ -22,6 +21,8 @@
     background: #336333;
     box-shadow: 0px 4px 8px 0px rgba(30, 52, 30, 0.16);
     cursor: pointer;
+    text-decoration: none;
+    color: white;
 
     @include desktop {
       margin-bottom: 48px;
