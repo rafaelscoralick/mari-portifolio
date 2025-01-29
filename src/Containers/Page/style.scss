@@ -36,6 +36,21 @@
     @include tablet() {
       height: calc(522px);
     }
+
+    h1 {
+      padding-top: 50px;
+      font-size: 48px;
+      margin-bottom: 0;
+    }
+
+    h2 {
+      padding-top: 30px;
+      margin-top: 0;
+      margin-bottom: 0;
+      font-family: "Open Sans";
+      font-size: 32px;
+      font-weight: 400;
+    }
   }
 
   .project-title {
@@ -64,9 +79,8 @@
   h2 {
     color: #FFE7DE;
     font-family: "Rozha One";
-    font-size: 32px;
+    font-size: 40px;
     text-transform: lowercase;
-    margin-top: 80px;
     margin-bottom: 40px;
 
     @include desktop {
@@ -77,15 +91,19 @@
   .section-project h3,
   h3 {
     color: #FFE7DE;
-    font-family: "Rozha One";
+    font-family: "Open Sans";
     font-size: 18px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 400;
     margin-bottom: 24px;
 
     @include desktop {
       font-size: 32px;
     }
+  }
+
+  .sub-section {
+    margin-bottom: 40px;
   }
 
   sub {
@@ -115,9 +133,7 @@
 
 
 
-    @include desktop() {
-      margin: 24px 0;
-    }
+
 
     img {
       margin-right: 24px;
