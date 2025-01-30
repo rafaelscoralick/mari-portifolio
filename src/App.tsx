@@ -25,15 +25,15 @@ function App() {
   const projects = [
     {
       name: 'you-nail',
-      link: '/#younail',
+      link: '#younail',
     },
     {
       name: 'honey parceiros',
-      link: '/#honey',
+      link: '#honey',
     },
     {
       name: 'shopee',
-      link: '/#shopee',
+      link: '#shopee',
     },
   ];
 

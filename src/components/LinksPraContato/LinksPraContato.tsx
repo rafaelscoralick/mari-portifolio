@@ -10,19 +10,25 @@ export default function LinksPraContato() {
         </span>
         <ul>
           <li>
-            <a href="/">
+            <a
+              href="https://web.whatsapp.com/send?phone=5521965883489"
+              target="_blank"
+            >
               <img src="/svg/whatsapp.svg" alt="whatsapp" />
               <span>whatsapp</span>
             </a>
           </li>
           <li>
-            <a href="/">
+            <a
+              href="https://www.linkedin.com/in/mariana-lima-5664a17b/"
+              target="_blank"
+            >
               <img src="/svg/linkedin.svg" alt="linkedin" />
               <span>linkedin</span>
             </a>
           </li>
           <li>
-            <a href="/">
+            <a href="mailto:ola.limamari@gmail.com" target="_blank">
               <img src="/svg/mail.svg" alt="e-mail" />
               <span>e-mail</span>
             </a>

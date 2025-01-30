@@ -1,32 +1,96 @@
 @use "../../styles/mixins" as *;
 
+// .scroll-to-top-button {
+//   position: fixed;
+//   bottom: 90px;
+//   right: 20px;
+//   padding: 28px 19px;
+//   font-size: 16px;
+//   color: #FFC1B0;
+//   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+//   border-radius: 84px;
+//   border: 2px solid var(--primary-color, #FFE7DE);
+//   background: rgba(255, 231, 222, 0.20);
+//   cursor: pointer;
+//   transition: opacity 0.3s ease, visibility 0.3s ease, background 0.3s ease;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   opacity: 0;
+//   visibility: hidden;
+//   width: 60px;
+//   height: 60px;
+
+
+//   left: 0;
+//   right: 0;
+//   margin: 0 auto;
+
+//   @include desktop {
+//     bottom: 20px;
+//     width: 80px;
+//     height: 80px;
+//     left: initial;
+//     right: 145px;
+//   }
+
+//   &.visible {
+//     opacity: 1;
+//     visibility: visible;
+//   }
+
+//   &:hover {
+//     background-color: #ff7336ed;
+//   }
+
+//   span {
+//     color: #FFE7DE;
+//     text-align: center;
+//     font-family: "Open Sans";
+//     font-size: 8px;
+//     font-style: normal;
+//     font-weight: 700;
+//     line-height: normal;
+//   }
+
+//   img {
+//     height: 25px;
+//     padding: 4px;
+//   }
+// }
+
+
 .scroll-to-top-button {
   position: fixed;
   bottom: 90px;
   right: 20px;
-  padding: 28px 19px;
-  font-size: 16px;
-  color: #FFC1B0;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-
-  border-radius: 84px;
-  border: 2px solid var(--primary-color, #FFE7DE);
-  background: rgba(255, 231, 222, 0.20);
+  border-radius: 8px;
+  border: 2px solid #366836;
+  background: #FFE7DE;
   cursor: pointer;
   transition: opacity 0.3s ease, visibility 0.3s ease, background 0.3s ease;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   opacity: 0;
   visibility: hidden;
-  width: 60px;
-  height: 60px;
+  width: 222px;
+  height: 46px;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 
   @include desktop {
     bottom: 20px;
-    width: 80px;
-    height: 80px;
+    left: initial;
+    right: 145px;
   }
 
   &.visible {
@@ -35,17 +99,18 @@
   }
 
   &:hover {
-    background-color: #ff7336ed;
+    background-color: #FFC1B0;
   }
 
   span {
-    color: #FFE7DE;
+    color: #366836;
     text-align: center;
     font-family: "Open Sans";
-    font-size: 8px;
+    font-size: 20px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     line-height: normal;
+    width: 147px;
   }
 
   img {

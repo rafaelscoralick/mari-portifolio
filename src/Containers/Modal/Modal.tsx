@@ -36,7 +36,7 @@ export default function Modal({ children, trigger }: ModalProps) {
             <button className="modal-close" onClick={closeModal}>
               &times;
             </button>
-            <div className="modal-body">{children}</div>
+            <div className="modal-body scroll-box">{children}</div>
           </div>
         </div>
       )}

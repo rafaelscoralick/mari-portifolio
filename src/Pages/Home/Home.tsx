@@ -99,7 +99,7 @@ export default function Home() {
         <Headline />
       </div>
       <div className="row">
-        <Carousel items={getSize()} autoplay={false}>
+        <Carousel items={getSize()} autoplay={true} delay={1000}>
           {icons.map((icon, index) => (
             <Icon key={index} {...icon} />
           ))}

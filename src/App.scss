@@ -29,9 +29,18 @@ body {
   margin-bottom: 80px;
   font-family: "Open Sans";
 
+  background-image: url('/banners/Maskgroup_mobile.png'),
+    url(''),
+    url('');
+  background-position: top right,
+    top left,
+    bottom left;
+  background-repeat: no-repeat;
+  background-size: auto;
+
   @include desktop {
     margin-bottom: 0;
-    background-image: url('/banners/Maskgroup_desktop.png'), url(''), url('');
+    background-image: url('/banners/Maskgroup_desktop.png'), url(''), url('/banners/Maskgroup_desk_footer.png');
     background-position: top right, top left, bottom left;
     background-repeat: no-repeat;
     background-size: auto;

@@ -1,9 +1,15 @@
+@use "../../styles/mixins" as *;
+
 .deliverycarrousel {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0 24px;
+
+  @include tablet() {
+    margin: 0 24px;
+    max-width: 1280px;
+  }
 
   // .swiper-slide {
   //   max-width: 300px;
@@ -14,29 +20,26 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
     margin: 0 auto;
     height: auto;
     justify-content: center;
     height: 600px;
-    margin-bottom: 64px;
+    margin-bottom: 24px;
 
     .image-mockup {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      width: 100%;
       margin: 0 auto;
       height: auto;
       justify-content: center;
-      height: 600px;
-      margin-bottom: 64px;
+      // height: 600px;
+      margin-bottom: 24px;
       position: relative;
 
       img {
         height: auto;
-        width: 100%;
         object-fit: cover;
         object-position: center;
         transition: transform 0.3s ease;

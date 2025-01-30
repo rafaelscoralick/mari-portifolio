@@ -1,7 +1,7 @@
 import CustomButton from '../../components/CustomButton';
-// import DeliveryCarrousel from '../../components/DeliveryCarrousel';
+import DeliveryCarrousel from '../../components/DeliveryCarrousel';
 import Page from '../../Containers/Page';
-// import { items } from '../../Data/MockDeliveryCarrousel';
+import { items } from '../../Data/MockDeliveryCarrousel';
 import useDeviceType from '../../hooks/useDeviceType';
 import './style.scss';
 
@@ -231,7 +231,9 @@ export default function ProjectYouNail() {
                 segunda desenvolveremos os entregáveis.
               </p>
             </div>
-            <div>{/* <DeliveryCarrousel items={items} /> */}</div>
+            <div>
+              <DeliveryCarrousel items={items} qtd={isMobile ? 1 : 3.5} />
+            </div>
           </div>
         </div>
         <div className="discovery">

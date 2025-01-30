@@ -29,6 +29,7 @@ export default function ScrollToTopButton() {
       aria-label="Voltar ao topo"
     >
       <img src="/svg/backtop.svg" alt="voltar-top" />
+      <span>voltar ao topo</span>
     </button>
   );
 }
