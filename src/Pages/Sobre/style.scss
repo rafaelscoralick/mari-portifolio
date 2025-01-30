@@ -1,11 +1,11 @@
 .sobre {
   margin-top: 100px;
+  margin-bottom: 100px;
 
   .aboutme,
   .meucurriculo {
     display: flex;
     border: none;
-    margin-bottom: 80px;
 
     .inner {
       margin: 0 auto;
@@ -14,7 +14,7 @@
 
     h3 {
       font-size: 32px;
-      padding: 40px 0 32px;
+      padding: 40px 0 0px;
     }
 
     p {
