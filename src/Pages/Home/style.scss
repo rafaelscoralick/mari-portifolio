@@ -1,4 +1,15 @@
+@use "../../styles/mixins" as *;
+
 .home {
+
+  #projetos {
+    padding: 0 15px;
+
+    @include tablet() {
+      padding: 0;
+    }
+  }
+
   .aboutme-row {
     gap: 80px;
   }

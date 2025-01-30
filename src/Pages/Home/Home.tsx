@@ -112,7 +112,7 @@ export default function Home() {
         </Carousel>
       </div>
 
-      <div id="projetos" className="container">
+      <div id="projetos">
         <ProjectsList />
       </div>
       <div id="sobre" className="row aboutme-row">

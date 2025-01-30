@@ -9,7 +9,7 @@ interface CarouselProps {
 export default function CarrouselClothesline({ items }: CarouselProps) {
   return (
     <div className="carrouselclothesline">
-      <Carousel items={1} delay={4000}>
+      <Carousel items={1} delay={4000} autoplay={false}>
         {items.map((item, index) => (
           <CardHero key={index} image={item} />
         ))}
