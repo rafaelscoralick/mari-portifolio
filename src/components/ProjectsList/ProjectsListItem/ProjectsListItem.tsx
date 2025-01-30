@@ -3,6 +3,7 @@ import Icon from '../../Icon';
 import './style.scss';
 
 export default function ProjectsListItem({
+  name,
   imageMockup,
   logoProject,
   description,
@@ -30,7 +31,7 @@ export default function ProjectsListItem({
           </div>
 
           <div className="ver-mais">
-            <a href="/projetos/you-nail">ver mais</a>
+            <a href={`/projetos/${name}`}>ver mais</a>
           </div>
 
           <div className="icons">

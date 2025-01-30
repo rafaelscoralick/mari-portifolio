@@ -9,14 +9,14 @@
 
   @include desktop {
     width: 458px;
-    margin-bottom: 130px;
+    margin-bottom: 0px;
   }
 
   .swiper {
     padding-top: 120px;
 
     @include tablet {
-      padding-top: 185px;
+      padding-top: 150px;
     }
   }
 

@@ -1,7 +1,7 @@
 import CustomButton from '../../components/CustomButton';
-import DeliveryCarrousel from '../../components/DeliveryCarrousel';
+// import DeliveryCarrousel from '../../components/DeliveryCarrousel';
 import Page from '../../Containers/Page';
-import { items } from '../../Data/MockDeliveryCarrousel';
+// import { items } from '../../Data/MockDeliveryCarrousel';
 import useDeviceType from '../../hooks/useDeviceType';
 import './style.scss';
 
@@ -124,7 +124,7 @@ export default function ProjectShopee() {
 
         <br />
         <div className="row jc">
-          <CustomButton href="https://www.figma.com/file/0x9a3a4d0c0d9d4e0f9e/YouNail?node-id=0%3A1">
+          <CustomButton href="/">
             <h4>leia mais </h4>
             <div className="row-mobile">
               <img src="/banners/MockupsFlatlay.png" alt="MockupsFlatlay" />
@@ -134,7 +134,7 @@ export default function ProjectShopee() {
               </span>
             </div>
           </CustomButton>
-          <CustomButton href="https://www.figma.com/file/0x9a3a4d0c0d9d4e0f9e/YouNail?node-id=0%3A1">
+          <CustomButton href="/">
             <h4>leia mais </h4>
             <div className="row-mobile">
               <img src="/banners/MockupsFlatlay2.png" alt="MockupsFlatlay" />

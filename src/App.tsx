@@ -14,6 +14,7 @@ import Sobre from './Pages/Sobre';
 import Contato from './Pages/Contato';
 import Projetos from './Pages/Projetos';
 import ProjectYouNail from './Pages/ProjectYouNail';
+import ProjectHBParceiros from './Pages/ProjectHBParceiros';
 import ProjectShopee from './Pages/ProjectShopee';
 import Footer from './components/Footer';
 
@@ -47,8 +48,12 @@ function App() {
           <Route path="/sobre" element={<Sobre />} />
           <Route path="/contato" element={<Contato />} />
           <Route path="/projetos" element={<Projetos />} />
-          <Route path="/projetos/you-nail" element={<ProjectYouNail />} />
+          <Route path="/projetos/younail" element={<ProjectYouNail />} />
           <Route path="/projetos/shopee" element={<ProjectShopee />} />
+          <Route
+            path="/projetos/hbparceiros"
+            element={<ProjectHBParceiros />}
+          />
         </Routes>
         <NavBar />
         <Footer />

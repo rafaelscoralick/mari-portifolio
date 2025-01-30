@@ -27,7 +27,7 @@ export default function ProjectsList() {
       side: Side.Left,
     },
     {
-      name: 'honey',
+      name: 'hbparceiros',
       logoProject: '/honey-icon.png',
       description:
         'Painel para programa de afiliados, acompanhamento de vendas, pagamento de comissão e capacitação em marketing digital.',
