@@ -14,6 +14,7 @@ import Sobre from './Pages/Sobre';
 import Contato from './Pages/Contato';
 import Projetos from './Pages/Projetos';
 import ProjectYouNail from './Pages/ProjectYouNail';
+import ProjectShopee from './Pages/ProjectShopee';
 import Footer from './components/Footer';
 
 function App() {
@@ -47,6 +48,7 @@ function App() {
           <Route path="/contato" element={<Contato />} />
           <Route path="/projetos" element={<Projetos />} />
           <Route path="/projetos/you-nail" element={<ProjectYouNail />} />
+          <Route path="/projetos/shopee" element={<ProjectShopee />} />
         </Routes>
         <NavBar />
         <Footer />
