@@ -9,6 +9,8 @@ interface CarouselProps {
   delay?: number;
   dots?: boolean;
   spaceBetween?: number;
+  reverse?: boolean;
+  speed?: number;
   children: React.ReactNode;
 }
 
@@ -19,6 +21,8 @@ export default function Carousel({
   delay = 2500,
   spaceBetween = 0,
   dots = false,
+  speed = 500,
+  reverse = false,
 }: CarouselProps) {
   function handlerConfig({
     autoplay,
@@ -41,13 +45,16 @@ export default function Carousel({
           enabled: dots,
           clickable: true,
         }}
+        freeMode={true}
         loop={true}
+        speed={speed}
         modules={handlerConfig({ autoplay, dots })}
         autoplay={
           autoplay
             ? {
                 delay: delay,
                 pauseOnMouseEnter: true,
+                reverseDirection: reverse,
               }
             : false
         }
