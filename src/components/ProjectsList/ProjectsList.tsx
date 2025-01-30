@@ -9,7 +9,7 @@ export default function ProjectsList() {
       description:
         'Encontre a manicure perfeita para fazer sua unha igual aquela imagem que você salvou em sua galeria.',
       imageMockup: '/mockup1.png',
-      backgroundImage: '/bg-hb-parceiros.png',
+      backgroundImage: '/bg-younail.png',
       icons: [
         {
           icon: '/icon-mobile.png',
@@ -55,7 +55,7 @@ export default function ProjectsList() {
       description:
         'Redesign do fluxo de Carrinho e Checkout do aplicativo de varejo eletrônico Shopee.',
       imageMockup: '/mockup3.png',
-      backgroundImage: '/bg-hb-parceiros.png',
+      backgroundImage: '/bg-shopee.png',
       icons: [
         {
           icon: '/icon-mobile.png',
