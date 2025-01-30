@@ -10,10 +10,7 @@ export default function LinksPraContato() {
         </span>
         <ul>
           <li>
-            <a
-              href="https://web.whatsapp.com/send?phone=5521965883489"
-              target="_blank"
-            >
+            <a href="whatsapp://send?phone=5521965883489" target="_blank">
               <img src="/svg/whatsapp.svg" alt="whatsapp" />
               <span>whatsapp</span>
             </a>
