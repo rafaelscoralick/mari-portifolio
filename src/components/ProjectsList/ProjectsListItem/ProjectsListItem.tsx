@@ -4,8 +4,8 @@ import './style.scss';
 
 export default function ProjectsListItem({
   name,
+  title,
   imageMockup,
-  logoProject,
   description,
   backgroundImage,
   icons,
@@ -21,9 +21,7 @@ export default function ProjectsListItem({
       </div>
       <div className="core">
         <div className="inner">
-          <h3>
-            <img src={logoProject} alt="logo-project" />
-          </h3>
+          <h3>{title}</h3>
           <span>{description}</span>
 
           <div className="image-mockup-mob">

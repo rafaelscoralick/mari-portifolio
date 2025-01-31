@@ -1,7 +1,8 @@
 import CustomButton from '../../components/CustomButton';
 import DeliveryCarrousel from '../../components/DeliveryCarrousel';
 import Page from '../../Containers/Page';
-import { items } from '../../Data/MockDeliveryCarrousel';
+import { items as mockupDeliveryItems } from '../../Data/MockDeliveryCarrousel';
+import { items as mockupDiscoveryItems } from '../../Data/MockDiscoveryCarrousel';
 import useDeviceType from '../../hooks/useDeviceType';
 import './style.scss';
 
@@ -232,7 +233,10 @@ export default function ProjectYouNail() {
               </p>
             </div>
             <div>
-              <DeliveryCarrousel items={items} qtd={isMobile ? 1 : 3.5} />
+              <DeliveryCarrousel
+                items={mockupDiscoveryItems}
+                qtd={isMobile ? 1 : 3.5}
+              />
             </div>
           </div>
         </div>
@@ -243,11 +247,14 @@ export default function ProjectYouNail() {
             neste projeto não desenvolvi testes de usabilidade, mas são
             indicados para uma primeira validação das hipóteses de design.
           </p>
-          {/* <DeliveryCarrousel items={items} /> */}
+          <DeliveryCarrousel
+            items={mockupDeliveryItems}
+            qtd={isMobile ? 1 : 3.5}
+          />
         </div>
         <h2>protótipo navegável</h2>
         <iframe
-          src="https://embed.figma.com/proto/P9xC9V78gHmGGd3aabQzS3/Product-Design_The-Starter?page-id=724%3A1801&node-id=731-4179&p=f&viewport=1124%2C207%2C0.17&scaling=scale-down&content-scaling=fixed&starting-point-node-id=731%3A4179&embed-host=share"
+          src="https://www.figma.com/proto/P9xC9V78gHmGGd3aabQzS3/Product-Design_The-Starter?page-id=724%3A1801&node-id=731-4179&p=f&viewport=1124%2C207%2C0.17&scaling=scale-down&content-scaling=fixed&starting-point-node-id=731%3A4179&embed-host=share"
           height={isMobile ? 520 : 640}
           width={isMobile ? 236 : 440}
           allowFullScreen
@@ -301,17 +308,14 @@ export default function ProjectYouNail() {
           </div>
         </div>
         <div className="row jc">
-          <CustomButton href="/">
+          <CustomButton href="/projetos/hbparceiros">
             <h4>leia mais </h4>
             <div className="row-mobile">
-              <img src="/banners/MockupsFlatlay.png" alt="MockupsFlatlay" />
-              <span>
-                you.nail, fluxo de pesquisa para aplicação de agendamento de
-                manicure.
-              </span>
+              <img src="/mockup2.png" alt="MockupsFlatlay" />
+              <span>Honeybee parceiros, painel para afiliados e-commerce</span>
             </div>
           </CustomButton>
-          <CustomButton href="/">
+          <CustomButton href="/projetos/shopee">
             <h4>leia mais </h4>
             <div className="row-mobile">
               <img src="/banners/MockupsFlatlay2.png" alt="MockupsFlatlay" />

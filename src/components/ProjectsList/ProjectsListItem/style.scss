@@ -160,20 +160,14 @@
     }
 
     h3 {
-      margin: 0 24px;
-      margin-bottom: 16px;
+      margin: 0 24px 24px;
+      color: #FFE7DE;
+      font-family: "Rozha One";
+      font-size: 30px;
 
       @include desktop {
-        margin: 0 62px;
-        margin-bottom: 62px;
-      }
-
-      img {
-        height: 24px;
-
-        @include desktop {
-          height: 48px;
-        }
+        font-size: 32px;
+        margin: 0 62px 24px;
       }
     }
 
@@ -189,4 +183,5 @@
       }
     }
   }
+
 }

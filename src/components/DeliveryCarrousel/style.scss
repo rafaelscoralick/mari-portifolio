@@ -9,11 +9,24 @@
   @include tablet() {
     margin: 0 24px;
     max-width: 1280px;
+    position: relative;
   }
 
-  // .swiper-slide {
-  //   max-width: 300px;
-  // }
+  .swiper-slide {
+
+    @include tablet {
+      margin-right: 56px !important;
+    }
+  }
+
+  &:hover {
+    @include desktop {
+      .setacarrousel {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
 
   .carrousel-item {
     display: flex;
@@ -23,7 +36,6 @@
     margin: 0 auto;
     height: auto;
     justify-content: center;
-    height: 600px;
     margin-bottom: 24px;
 
     .image-mockup {
@@ -38,8 +50,14 @@
       margin-bottom: 24px;
       position: relative;
 
+
+      @include desktop {
+        width: 100%;
+      }
+
       img {
         height: auto;
+        width: 100%;
         object-fit: cover;
         object-position: center;
         transition: transform 0.3s ease;
@@ -63,10 +81,16 @@
     .description {
       color: #FFF;
       font-family: "Open Sans";
-      font-size: 18px;
+      font-size: 14px;
       line-height: normal;
       margin: 0;
       margin-bottom: 32px;
+
+      margin: 16px 24px;
+
+      @include desktop {
+        margin: 16px auto;
+      }
 
       strong {
         font-weight: 300;

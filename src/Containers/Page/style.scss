@@ -82,9 +82,11 @@
     font-size: 40px;
     text-transform: lowercase;
     margin-bottom: 40px;
+    margin-top: 50px;
 
     @include desktop {
       font-size: 40px;
+      margin-top: 0;
     }
   }
 
@@ -228,12 +230,13 @@
       }
 
       .disclaimer {
+        align-items: center;
 
         img {
           display: flex;
           align-self: anchor-center;
-          width: 28px;
-          height: 30px;
+          width: 40px;
+          height: 40px;
         }
       }
 
@@ -267,11 +270,22 @@
 
   .discovery {
     background: #366836;
+    margin: 40px 0px;
+    margin-bottom: 40px;
+    padding-top: 30px;
 
     @include desktop {
+      border-radius: 16px;
+      padding: 40px 64px;
+
       .w50 {
         width: 50%;
       }
+    }
+
+    h3 {
+      font-family: "rozha one";
+      font-size: 32px;
     }
   }
 

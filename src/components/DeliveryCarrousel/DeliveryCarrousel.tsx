@@ -14,12 +14,17 @@ export default function DeliveryCarrousel({
 }: DeliveryCarrouselProps) {
   return (
     <div className="deliverycarrousel">
-      <Carousel items={qtd} autoplay={false} dots={true} spaceBetween={16}>
+      <Carousel
+        items={qtd}
+        autoplay={false}
+        dots={true}
+        spaceBetween={16}
+        navegation={true}
+      >
         {items.map((item, index) => (
           <div className="carrousel-item" key={index}>
             <div className="image-mockup">
               <img src={item.image} alt="imagem-mockup" />
-              <div className="title">{item.title}</div>
             </div>
             <div className="description">{item.description}</div>
           </div>

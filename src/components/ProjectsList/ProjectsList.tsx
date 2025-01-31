@@ -5,6 +5,7 @@ export default function ProjectsList() {
   const data: IProjectsListItem[] = [
     {
       name: 'younail',
+      title: 'you.nail',
       logoProject: '/younail-icon.png',
       description:
         'Encontre a manicure perfeita para fazer sua unha igual aquela imagem que você salvou em sua galeria.',
@@ -28,6 +29,7 @@ export default function ProjectsList() {
     },
     {
       name: 'hbparceiros',
+      title: 'hb parceiros',
       logoProject: '/honey-icon.png',
       description:
         'Painel para programa de afiliados, acompanhamento de vendas, pagamento de comissão e capacitação em marketing digital.',
@@ -51,6 +53,7 @@ export default function ProjectsList() {
     },
     {
       name: 'shopee',
+      title: 'shopee',
       logoProject: '/shopee-icon.png',
       description:
         'Redesign do fluxo de Carrinho e Checkout do aplicativo de varejo eletrônico Shopee.',

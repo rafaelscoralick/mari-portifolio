@@ -1,3 +1,11 @@
 @use "../../styles/mixins" as *;
 
-.projectslistitem {}
+.projectslist {
+  h2 {
+    margin-top: 70px;
+    margin-bottom: 40px;
+    color: #FFF;
+    font-family: "Rozha One";
+    font-size: 48px;
+  }
+}

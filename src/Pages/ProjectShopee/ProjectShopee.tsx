@@ -124,7 +124,7 @@ export default function ProjectShopee() {
 
         <br />
         <div className="row jc">
-          <CustomButton href="/">
+          <CustomButton href="/projetos/younail">
             <h4>leia mais </h4>
             <div className="row-mobile">
               <img src="/banners/MockupsFlatlay.png" alt="MockupsFlatlay" />
@@ -134,14 +134,11 @@ export default function ProjectShopee() {
               </span>
             </div>
           </CustomButton>
-          <CustomButton href="/">
+          <CustomButton href="/projetos/hbparceiros">
             <h4>leia mais </h4>
             <div className="row-mobile">
-              <img src="/banners/MockupsFlatlay2.png" alt="MockupsFlatlay" />
-              <span>
-                shopee, redesign do fluxo de Carrinho e Checkout do aplicativo
-                de varejo eletrônico.
-              </span>
+              <img src="/mockup2.png" alt="MockupsFlatlay" />
+              <span>Honeybee parceiros, painel para afiliados e-commerce</span>
             </div>
           </CustomButton>
         </div>
