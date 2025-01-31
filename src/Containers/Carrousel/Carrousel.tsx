@@ -1,7 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import './style.scss';
-import 'swiper/css';
-import 'swiper/css/navigation';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import { Children } from 'react';
 import SetaCarrousel from '../../components/SeteCarrousel/SetaCarrousel';
