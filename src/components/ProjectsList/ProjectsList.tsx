@@ -56,7 +56,7 @@ export default function ProjectsList() {
       title: 'shopee',
       logoProject: '/shopee-icon.png',
       description:
-        'Redesign do fluxo de Carrinho e Checkout do aplicativo de varejo eletrônico Shopee.',
+        'Redesign do fluxo de carrinho e checkout do aplicativo de varejo eletrônico shopee.',
       imageMockup: '/mockup3.png',
       backgroundImage: '/bg-shopee.png',
       icons: [
@@ -79,7 +79,7 @@ export default function ProjectsList() {
 
   return (
     <div className="projectslist">
-      <h2>Projetos</h2>
+      <h2>projetos</h2>
       <div className="projectslist-items">
         {data.map((item, index) => (
           <div key={index} id={item.name}>

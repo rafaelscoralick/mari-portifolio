@@ -49,11 +49,11 @@ export default function Carousel({
   return (
     <div className="carousel">
       {navegation ? (
-        <SetaCarrousel className={`setacarrousel-next-${randId}`} />
+        <SetaCarrousel className={`setacarrousel-next-${randId} reverse`} />
       ) : null}
 
       {navegation ? (
-        <SetaCarrousel className={`setacarrousel-prev-${randId} reverse`} />
+        <SetaCarrousel className={`setacarrousel-prev-${randId}`} />
       ) : null}
 
       <Swiper

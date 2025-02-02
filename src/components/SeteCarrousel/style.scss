@@ -10,15 +10,17 @@
     opacity: 0;
     visibility: hidden;
 
-    left: -65px;
-    right: auto;
+
+
+    left: auto;
+    right: -65px;
     z-index: 9;
     transition: opacity 0.3s ease, visibility 0.3s ease;
 
     &.reverse {
       transform: rotate(180deg);
-      left: auto;
-      right: -65px;
+      left: -65px;
+      right: auto;
     }
   }
 

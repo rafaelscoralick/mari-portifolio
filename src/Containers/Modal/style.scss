@@ -66,16 +66,19 @@
     .modal-body {
       font-size: 1rem;
       line-height: 1.5;
-
       max-height: 80vh;
 
+      @include desktop {
+        height: 804px;
+        // width: 472px;
+        max-height: 804px;
+      }
+
       .image-container {
-        overflow: hidden;
-        width: 100%;
         justify-content: center;
 
         img {
-          height: 100%;
+          height: 804px;
           width: auto;
         }
       }
@@ -87,6 +90,12 @@
       border-radius: 8px;
       padding: 10px;
       scrollbar-width: 8px;
+      height: calc(804px - 140px);
+
+      @include desktop {
+        height: calc(804px - 100px);
+      }
+
     }
 
     .scroll-box::-webkit-scrollbar {

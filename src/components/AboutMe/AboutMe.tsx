@@ -39,10 +39,10 @@ export default function AboutMe() {
           }
         >
           <div className="row">
-            <div className="desktop-only">
+            <div className="desktop-only image-container ">
               <img src="/banners/carioca.png" alt="carioca" />
             </div>
-            <div className="content">
+            <div className="content scroll-box">
               <h3>crônicas urbanas de uma carioca inspirada</h3>
               <p>
                 Carioca do Aterro do Flamengo – desde cedo compartilhava a
@@ -99,7 +99,7 @@ export default function AboutMe() {
             <div className="desktop-only image-container">
               <img src="/banners/marifoto.png" alt="carioca" />
             </div>
-            <div className="content">
+            <div className="content scroll-box">
               <h3>
                 Como vim parar aqui - um relato da minha trajetória profissional
               </h3>

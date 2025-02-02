@@ -312,7 +312,7 @@ export default function ProjectYouNail() {
             <h4>leia mais </h4>
             <div className="row-mobile">
               <img src="/mockup2.png" alt="MockupsFlatlay" />
-              <span>Honeybee parceiros, painel para afiliados e-commerce</span>
+              <span>honeybe parceiros, painel para afiliados e-commerce</span>
             </div>
           </CustomButton>
           <CustomButton href="/projetos/shopee">
