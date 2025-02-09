@@ -4,7 +4,7 @@ type MenuProps = {
   projects: Array<{
     name: string;
     link: string;
-    page: string;
+    page?: string;
   }>;
 };
 export default function Menu({ projects }: MenuProps) {
