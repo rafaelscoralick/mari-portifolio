@@ -4,6 +4,7 @@ type MenuProps = {
   projects: Array<{
     name: string;
     link: string;
+    page: string;
   }>;
 };
 export default function Menu({ projects }: MenuProps) {
@@ -57,7 +58,7 @@ export default function Menu({ projects }: MenuProps) {
                   href={project.link}
                   onClick={(e) => {
                     e.preventDefault();
-                    handleScrollToSection(project.link.split('#')[1]); // Rola até a seção 'projetos' na home
+                    navigate('projetos/' + project.page);
                   }}
                   target="_blank"
                   rel="noopener noreferrer"

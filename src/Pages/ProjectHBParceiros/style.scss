@@ -2,6 +2,9 @@
 
 .projecthbparceiros {
   @include desktop {
+    margin: auto;
+    max-width: 1280px;
+
     .project-main {
       height: 600px;
     }
@@ -15,7 +18,7 @@
     margin-bottom: 45px;
 
     @include desktop {
-      width: 1280px;
+      width: 1120px;
       margin-bottom: 0px;
     }
 
@@ -24,6 +27,12 @@
       padding-bottom: 32px;
 
       @include desktop {}
+    }
+  }
+
+  .h50 {
+    @include desktop {
+      width: calc(50% - 65px);
     }
   }
 }

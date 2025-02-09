@@ -32,6 +32,13 @@ export default function ProjectHBParceiros() {
                 mercado online e integrando ferramentas de acompanhamento de
                 vendas e capacitação em um painel intuitivo.
               </p>
+              <p>
+                <small>Créditos da imagem: Jornal do Estado do Rio</small>
+                <br />
+                <small>
+                  Créditos da imagem: Honey Be (https://www.honeybe.com.br/)
+                </small>
+              </p>
             </div>
             <div className="row">
               <div className="imglong">
@@ -42,11 +49,8 @@ export default function ProjectHBParceiros() {
         </div>
         {/* /////////////////////////////// */}
         <div className="abovethefold mobile-only">
-          <img src="/banners/hbbanner.png" alt="banner" />
-          <p>
-            Créditos da imagem: Capa matéria Hailey Bieber. Crédito: Vogue
-            America. Imagem: @haileybieber
-          </p>
+          <img src="/banners/hbbaner.png" alt="banner" />
+          <p>Créditos da imagem: Jornal do Estado do Rio</p>
           <div className="project-title">
             <h1>hb parceiros</h1>
           </div>
@@ -107,6 +111,7 @@ export default function ProjectHBParceiros() {
             alguns aspectos do trabalho.
           </span>
         </div>
+        <br />
         <div className="banner mobile-only">
           <img src="/banners/Rectangle484c.png" alt="younailbanner" />
         </div>
@@ -145,17 +150,22 @@ export default function ProjectHBParceiros() {
             </div>
           </div>
         </div>
-        <div className="section-project">
+        <div className="section-project green-content">
           <div>
             <h3>entregáveis</h3>
-            <p>
+            <p className="h50">
               A solução desenhada para o painel de parceiros foi uma aplicação
               com navegação rápida e visualização dos principais dados de vendas
               e desempenho. O painel também conta com opções integradas para a
               retirada da comissão das vendas.
             </p>
             <div className="carrouselmocks">
-              <Carousel items={isMobile ? 1 : 4.2} autoplay={false} dots={true}>
+              <Carousel
+                items={isMobile ? 1 : 4.2}
+                autoplay={false}
+                dots={true}
+                navegation={true}
+              >
                 <img src="/banners/hbmock.png" />
                 <img src="/banners/hbmock2.png" />
                 <img src="/banners/hbmock3.png" />
@@ -195,11 +205,10 @@ export default function ProjectHBParceiros() {
         </div>
 
         <div className="section-project">
-          <div className="desktop-only">
-            <h3>conclusão</h3>
-          </div>
+          <div className="desktop-only"></div>
           <div>
-            <h2 className="mobile-only">conclusão</h2>
+            <h3>conclusão</h3>
+
             <p>
               Como UI Designer do projeto Honey Be Parceiros, meu objetivo foi
               criar uma interface que equilibrasse funcionalidade e
@@ -218,11 +227,13 @@ export default function ProjectHBParceiros() {
             </p>
           </div>
         </div>
-        <div className="row jc">
+        <div className="row jb">
           <CustomButton href="/projetos/younail">
-            <h4>leia mais </h4>
-            <div className="row-mobile">
+            <div>
               <img src="/banners/MockupsFlatlay.png" alt="MockupsFlatlay" />
+            </div>
+            <div>
+              <span className="title">leia mais </span>
               <span>
                 you.nail, fluxo de pesquisa para aplicação de agendamento de
                 manicure.
@@ -230,9 +241,11 @@ export default function ProjectHBParceiros() {
             </div>
           </CustomButton>
           <CustomButton href="/projetos/shopee">
-            <h4>leia mais </h4>
-            <div className="row-mobile">
+            <div>
               <img src="/banners/MockupsFlatlay2.png" alt="MockupsFlatlay" />
+            </div>
+            <div>
+              <span className="title">leia mais </span>
               <span>
                 shopee, redesign do fluxo de Carrinho e Checkout do aplicativo
                 de varejo eletrônico.

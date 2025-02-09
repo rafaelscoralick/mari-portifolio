@@ -20,6 +20,10 @@
 
   .prototipo {
     display: flex;
+
+    @include desktop {
+      justify-content: space-between;
+    }
   }
 
   .iframe-container {
@@ -28,5 +32,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+
+    @include desktop {}
   }
 }

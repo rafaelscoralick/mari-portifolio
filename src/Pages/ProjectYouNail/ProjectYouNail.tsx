@@ -31,13 +31,16 @@ export default function ProjectYouNail() {
                 Imagina achar a manicure perfeita que faz as unhas iguais as
                 daquela “it girl” que todos sabemos quem é 😏✨
               </p>
+              <p>
+                <small>
+                  Créditos da imagem: Capa matéria Hailey Bieber. Crédito: Vogue
+                  America. Imagem: @haileybieber
+                </small>
+              </p>
             </div>
             <div className="row">
-              <div className="imgsmall">
-                <img src="/banners/Rectangle482.png" alt="younailbanner" />
-              </div>
-              <div className="imgsmall">
-                <img src="/banners/Rectangle483.png" alt="younailbanner" />
+              <div className="imglong">
+                <img src="/banners/Rectanglea.png" alt="younailbanner" />
               </div>
             </div>
           </div>
@@ -94,7 +97,7 @@ export default function ProjectYouNail() {
               <h2 className="mobile-only">sobre o projeto</h2>
               <h3>meu papel</h3>
               <p>
-                neste projeto atuei como Product Designer. Desenvolvi as
+                Neste projeto atuei como Product Designer. Desenvolvi as
                 estratégias para lançamento do produto e toda parte de pesquisa
                 e resolução do problema de design.
               </p>
@@ -102,7 +105,7 @@ export default function ProjectYouNail() {
             <div className="sub-section">
               <h3>desafio</h3>
               <p>
-                a ampla gama de termos utilizados para descrever serviços de
+                A ampla gama de termos utilizados para descrever serviços de
                 manicure, como extensão, alongamento, gel, acrílico, tips, nail
                 design, designer de unhas, pode causar confusão e mal-entendidos
                 entre clientes e profissionais. O desafio enfrentado é criar um
@@ -127,7 +130,7 @@ export default function ProjectYouNail() {
             <h2 className="mobile-only">o problema</h2>
             <h3>hipótese</h3>
             <p>
-              acredito que ao padronizar os termos de serviços de manicure e
+              Acredito que ao padronizar os termos de serviços de manicure e
               oferecer uma opção de busca visual (upload de imagens de
               referência), poderemos reduzir a tempo de busca e aumentar a
               clareza para os usuários, pois é comum que terminologias variadas
@@ -142,7 +145,7 @@ export default function ProjectYouNail() {
             <div className="disclaimer">
               <img src="/svg/disclaimer.svg" alt="disclaimer" />
               <span>
-                o atual estudo não incluiu pesquisas quantitativas e
+                O atual estudo não incluiu pesquisas quantitativas e
                 qualitativas, apenas pesquisa exploratória. O processo para um
                 produto real deve se basear em dados que sustentem as hipóteses
                 e tomadas de decisão.
@@ -159,21 +162,21 @@ export default function ProjectYouNail() {
             <div className="star-solution">
               <img src="/svg/star.svg" alt="star" />
               <span>
-                upload de imagens de referência para facilitar a busca por
+                Upload de imagens de referência para facilitar a busca por
                 serviços específicos.
               </span>
             </div>
             <div className="star-solution">
               <img src="/svg/star.svg" alt="star" />
               <span>
-                tags (chips) de serviço, técnicas e tendências para identificar
+                Tags (chips) de serviço, técnicas e tendências para identificar
                 a manicure que realiza o design desejado.
               </span>
             </div>
             <div className="star-solution">
               <img src="/svg/star.svg" alt="star" />
               <span>
-                construir um fluxo de busca/pesquisa com upload de imagens e
+                Construir um fluxo de busca/pesquisa com upload de imagens e
                 resultados visuais que facilitem a busca por um serviço.
               </span>
             </div>
@@ -186,10 +189,13 @@ export default function ProjectYouNail() {
               <h4>unique value proposition</h4>
             </span>
             <p>
-              “a You.Nail sempre te ajuda a achar as melhores profissionais para
+              “A You.Nail sempre te ajuda a achar as melhores profissionais para
               deixarem suas unhas iguais às imagens de referência que você
               guarda no celular.”
             </p>
+          </div>
+          <div>
+            <img src="/banners/image38.png" alt="" />
           </div>
         </div>
         <div className="banner mobile-only">
@@ -203,19 +209,19 @@ export default function ProjectYouNail() {
             <h2 className="mobile-only">o processo</h2>
             <h3>discovery & delivery</h3>
             <p>
-              o projeto está dividido em duas grandes fases: discovery e
-              delivery. na primeira iremos mergulhar no problema, já na segunda
+              O projeto está dividido em duas grandes fases: discovery e
+              delivery. Na primeira iremos mergulhar no problema, já na segunda
               desenvolveremos os entregáveis.
             </p>
             <div className="desktop-only">
               <div className="disclaimer">
                 <img src="/svg/disclaimer.svg" alt="disclaimer" />
                 <span>
-                  a metodologia de desenvolvimento utilizada foi o double
+                  A metodologia de desenvolvimento utilizada foi o double
                   diamond, que organiza o processo de design em quatro etapas:
-                  descobrir, definir, desenvolver e entregar. ele ajuda a
+                  descobrir, definir, desenvolver e entregar. Ele ajuda a
                   entender em profundidade o problema antes de criar e testar
-                  soluções. o modelo promove a exploração de ideias e a entrega
+                  soluções. O modelo promove a exploração de ideias e a entrega
                   de soluções centradas no usuário.
                 </span>
               </div>
@@ -227,7 +233,7 @@ export default function ProjectYouNail() {
             <div>
               <h3>discovery</h3>
               <p>
-                o projeto está dividido em duas grandes fases: Discovery e
+                O projeto está dividido em duas grandes fases: Discovery e
                 Delivery. Na primeira iremos mergulhar no problema, já na
                 segunda desenvolveremos os entregáveis.
               </p>
@@ -243,7 +249,7 @@ export default function ProjectYouNail() {
         <div className="discovery">
           <h3>delivery</h3>
           <p>
-            esta é a parte que iremos desenvolver os entregáveis do projeto.
+            Esta é a parte que iremos desenvolver os entregáveis do projeto.
             neste projeto não desenvolvi testes de usabilidade, mas são
             indicados para uma primeira validação das hipóteses de design.
           </p>
@@ -267,7 +273,7 @@ export default function ProjectYouNail() {
           <div>
             <h2 className="mobile-only">conclusão</h2>
             <p>
-              o projeto you.nail foi desenvolvido com objetivo de solucionar uma
+              O projeto you.nail foi desenvolvido com objetivo de solucionar uma
               dor recorrente no segmento de nail design, a dificuldade dos
               clientes em encontrar serviços específicos devido à diversidade de
               termos de pesquisa e à subjetividade nas descrições.{' '}
@@ -291,36 +297,41 @@ export default function ProjectYouNail() {
               encontrem exatamente o que desejam.
             </p>
             <p>
-              embora o estudo tenha sido exploratório, os insights obtidos abrem
+              Embora o estudo tenha sido exploratório, os insights obtidos abrem
               portas para futuras validações com dados mais robustos, garantindo
               a evolução do produto. A experiência de desenvolver este projeto
               reforçou a importância de criar soluções intuitivas e focadas em
               necessidades reais, o que me inspira a continuar aprimorando
               minhas habilidades como product designer.
             </p>
-            <h2>oportunidades para evolução</h2>
+            <br />
+            <h3>oportunidades para evolução</h3>
             <p>
-              em uma evolução deste projeto, desenvolveria o fluxo de
-              agendamento e conversa com o prestador de serviço. o fluxo de
+              Em uma evolução deste projeto, desenvolveria o fluxo de
+              agendamento e conversa com o prestador de serviço. O fluxo de
               pesquisa mais agendamento elevam as possibilidades de conversão da
               plataforma.
             </p>
           </div>
         </div>
-        <div className="row jc">
+        <div className="row jb">
           <CustomButton href="/projetos/hbparceiros">
-            <h4>leia mais </h4>
-            <div className="row-mobile">
+            <div>
               <img src="/mockup2.png" alt="MockupsFlatlay" />
-              <span>honeybe parceiros, painel para afiliados e-commerce</span>
+            </div>
+            <div>
+              <span className="title">leia mais </span>
+              <span>HB parceiros, painel para afiliados e-commerce</span>
             </div>
           </CustomButton>
           <CustomButton href="/projetos/shopee">
-            <h4>leia mais </h4>
-            <div className="row-mobile">
+            <div>
               <img src="/banners/MockupsFlatlay2.png" alt="MockupsFlatlay" />
+            </div>
+            <div>
+              <span className="title">leia mais </span>
               <span>
-                shopee, redesign do fluxo de Carrinho e Checkout do aplicativo
+                Shopee, redesign do fluxo de Carrinho e Checkout do aplicativo
                 de varejo eletrônico.
               </span>
             </div>

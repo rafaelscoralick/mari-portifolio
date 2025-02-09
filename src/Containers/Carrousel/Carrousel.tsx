@@ -68,8 +68,8 @@ export default function Carousel({
         loop={true}
         speed={speed}
         navigation={{
-          nextEl: `.setacarrousel-next-${randId}`,
-          prevEl: `.setacarrousel-prev-${randId}`,
+          nextEl: `.setacarrousel-prev-${randId}`,
+          prevEl: `.setacarrousel-next-${randId}`,
         }}
         modules={handlerConfig({ autoplay, dots, navegation })}
         autoplay={

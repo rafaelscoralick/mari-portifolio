@@ -35,11 +35,8 @@ export default function ProjectShopee() {
               </p>
             </div>
             <div className="row">
-              <div className="imgsmall">
-                <img src="/banners/Rectangle480a.png" alt="shopeebanner" />
-              </div>
-              <div className="imgsmall">
-                <img src="/banners/Rectangle480b.png" alt="shopeebanner" />
+              <div className="imglong">
+                <img src="/banners/Rectangleb.png" alt="shopeebanner" />
               </div>
             </div>
           </div>
@@ -91,13 +88,20 @@ export default function ProjectShopee() {
             </div>
           </div>
         </div>
-        <div className="disclaimer">
-          <img src="/svg/disclaimer.svg" alt="disclaimer" />
-          <span>
-            Este projeto foi desenvolvido ao longo do curso de UX Avançado da
-            CoderHouse.
-          </span>
+
+        <div className="section-project">
+          <div className="desktop-only"></div>
+          <div>
+            <div className="disclaimer">
+              <img src="/svg/disclaimer.svg" alt="disclaimer" />
+              <span>
+                Este projeto foi desenvolvido ao longo do curso de UX Avançado
+                da CoderHouse.
+              </span>
+            </div>
+          </div>
         </div>
+
         <div className="banner mobile-only">
           <img src="/banners/image50.png" alt="banner" />
         </div>
@@ -115,7 +119,7 @@ export default function ProjectShopee() {
             <iframe
               src="https://embed.figma.com/proto/P9xC9V78gHmGGd3aabQzS3/Product-Design_The-Starter?page-id=724%3A1801&node-id=731-4179&p=f&viewport=1124%2C207%2C0.17&scaling=scale-down&content-scaling=fixed&starting-point-node-id=731%3A4179&embed-host=share"
               height={isMobile ? 520 : 700}
-              width={isMobile ? 236 : 440}
+              width={isMobile ? 236 : 608}
               allowFullScreen
               style={{ border: '1px solid rgba(0, 0, 0, 0.1)' }}
             ></iframe>
@@ -123,11 +127,13 @@ export default function ProjectShopee() {
         </div>
 
         <br />
-        <div className="row jc">
+        <div className="row jb">
           <CustomButton href="/projetos/younail">
-            <h4>leia mais </h4>
-            <div className="row-mobile">
+            <div>
               <img src="/banners/MockupsFlatlay.png" alt="MockupsFlatlay" />
+            </div>
+            <div>
+              <span className="title">leia mais </span>
               <span>
                 you.nail, fluxo de pesquisa para aplicação de agendamento de
                 manicure.
@@ -135,9 +141,11 @@ export default function ProjectShopee() {
             </div>
           </CustomButton>
           <CustomButton href="/projetos/hbparceiros">
-            <h4>leia mais </h4>
-            <div className="row-mobile">
+            <div>
               <img src="/mockup2.png" alt="MockupsFlatlay" />
+            </div>
+            <div>
+              <span className="title">leia mais </span>
               <span>Honeybe parceiros, painel para afiliados e-commerce</span>
             </div>
           </CustomButton>

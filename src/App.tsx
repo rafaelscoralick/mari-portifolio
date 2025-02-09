@@ -28,14 +28,17 @@ function App() {
     {
       name: 'you-nail',
       link: '#younail',
+      page: 'younail',
     },
     {
-      name: 'honey parceiros',
-      link: '#honey',
+      name: 'hb parceiros',
+      link: '#hb',
+      page: 'hbparceiros',
     },
     {
       name: 'shopee',
       link: '#shopee',
+      page: 'shopee',
     },
   ];
 

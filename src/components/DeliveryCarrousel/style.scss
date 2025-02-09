@@ -19,14 +19,7 @@
     }
   }
 
-  &:hover {
-    @include desktop {
-      .setacarrousel {
-        opacity: 1;
-        visibility: visible;
-      }
-    }
-  }
+
 
   .carrousel-item {
     display: flex;
